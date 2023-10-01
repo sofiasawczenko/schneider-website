@@ -1,0 +1,111 @@
+/* Drawer */
+
+#burger {
+    display: none;
+}
+
+#burger:hover {
+    background-color: #3DCD58;
+}
+
+.line {
+    width: 22px;
+    margin-bottom: 5px;
+    height: 2px;
+    background-color: #000;
+}
+
+.line:last-child {
+    margin-bottom: 0;
+}
+
+#nav {
+    z-index: 1000;
+    height: 600px;
+    width: 300px;
+    display: flex;
+    background-color: #FFF;
+    color: white;
+    position: fixed;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.3s linear;
+    margin-right: 200px;
+    border-radius: 8px;
+}
+
+#nav.active {
+    transform: translateX(0);
+}
+
+.super-container-drawer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px;
+}
+
+.container-drawer-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.h3profile {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1A1B2D
+}
+
+.pprofile {
+    font-size: 12px;
+    font-weight: 500;
+    color: #535763;
+}
+
+.uldrawer {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.lidrawer {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.a-drawer {
+    font-size: 15px;
+    font-weight: 600;
+    color: #535763;
+}
+
+.text {
+    width: 80%;
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: 3px;
+}
+
+h1 {
+    margin-bottom: 3rem;
+}
+
+a {
+    color: #fafafa;
+    transition: 0.3s linear;
+}
+
+i {
+    margin: 2rem;
+}
+
+a:hover {
+    color: goldenrod;
+    outline: none;
+}

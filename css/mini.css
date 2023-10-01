@@ -1,0 +1,17 @@
+.minicontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.minisubcontainer{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.h3mini{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 14px;
+}

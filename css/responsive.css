@@ -1,0 +1,106 @@
+@media screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 1000px) {
+    
+    #burger{
+        display: inline;
+        position: fixed;
+        top: 90%;
+        left: 12%;
+        background: white;
+        padding: 1rem;
+        z-index: 1100;
+        cursor: pointer;
+        transition: 0.3s linear;
+        box-shadow: 2px 2px 5px gray;
+    }   
+
+    /* Perfil */
+
+    .remove{
+        display: none;
+    }
+
+    .ulconfig{
+        display: none;
+    }
+
+    #imgremove{
+        display: none;
+    }
+
+    #imgmodifier{
+        width: 150px;
+        height: 150px;
+    }
+
+    #mainperfil{
+        flex-direction: column;
+    }
+
+    .containercared{
+        flex-direction: column;
+    }
+
+    #sizeandflex{
+        flex-direction: column;
+    }
+
+    #organizeimg{
+        margin-left: 20px;
+    }
+
+    #containercardtwo{
+        height: auto;
+    }
+
+    .containerachievements{
+        flex-direction: column;
+    }
+
+    .containersuper{
+        gap: 24px;
+        justify-content: start;
+    }
+
+    #containercardtwosuper{
+        margin-top: 10px;
+        width: min(75vh, 30rem);
+    }
+
+    /* End Perfil */
+
+    /* Rank */
+
+    .-rank-headerorganize{
+        height: 100rem;
+    }
+
+    .rank-profile-background{
+        height: 10%;
+    }
+
+    .rank-organize-1{
+        flex-direction: column;
+    }
+
+    .containermini{
+        flex-direction: column;
+    }
+
+    .leaderboard-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leaderboard-subcontainer{
+        width: 90%;
+    }
+
+    .competitions-container{
+        width: 90%;
+        height: 78rem;
+    }
+
+    .containeritenscarrousel{
+        width: 90%;
+    }
+}

@@ -1,0 +1,27 @@
+* {
+  font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.instituto-banner{
+  background-image: url('../img/instituto/projeto-banner.svg');
+  height: 350px;
+  width: 100%;
+}
+
+.text-schneider-color {
+  color: #3DCD58
+}
+
+.bg-schneider-color {
+  background-color: #3DCD58
+}
+
+.compromisso-banner {
+  background-image: url('../img/instituto/compromisso.svg');
+  height: 200px;
+  width: 100%;
+}

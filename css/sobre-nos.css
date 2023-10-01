@@ -1,0 +1,17 @@
+* {
+  font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.about-us{
+  background-image: url('../img/sobre-nos.svg');
+  height: 400px;
+  width: 100%;
+}
+
+.text-schneider-color {
+  color: #3DCD58
+}

@@ -1,0 +1,25 @@
+* {
+    font-family: 'Varela Round', Arial, Helvetica, sans-serif;
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.carousel-item {
+    display: block;
+    width: 259px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.bg-button-action{
+    background-color: #3DCD58;
+    color: #fff
+}

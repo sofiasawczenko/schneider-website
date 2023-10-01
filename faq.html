@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/shared-items.css" />
+    <link rel="stylesheet" href="css/drawer.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Varela+Round&display=swap"
+    rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png" />
+    <title>FAQ</title>
+  </head>
+
+  <body class="bg-light">
+    <!----------------------------------------------- nav bar --------------------------------------------------------------->
+    <nav class="remove">
+      <div class="d-flex justify-content-evenly">
+        <img src="img/schneider-logo.svg" alt="logo da schneider" />
+
+        <div class="d-flex align-items-center">
+          <input
+            type="text"
+            class="form-control bg-light"
+            placeholder="Pesquise por pessoas, desafios, assuntos & outros"
+            aria-label="Example text with button addon"
+            aria-describedby="button-addon1"
+            style="width: 30vw"
+          />
+          <button
+            class="btn btn-secondary btn-outline"
+            type="button"
+            id="button-addon1"
+          >
+            <img src="img/search-button-icon.svg" alt="pesquisar" />
+          </button>
+        </div>
+        <div class="d-flex align-items-center gap-5">
+          <img src="img/message-icon.svg" alt="messagens" />
+          <img src="img/notification-icon.svg" alt="notificações" />
+        </div>
+        <div class="d-flex align-items-center">
+          <img src="img/joana-photo.svg" alt="foto de perfil" />
+          <p class="pt-3">Joana Ramos</p>
+          <a
+            class="icons mx-2"
+            href="login.html"
+            style="width: 25px; height: 20px"
+          >
+            <img
+              class="img-fluid"
+              src="img/share-icon.svg"
+              alt="compartilhar postagem"
+            />
+          </a>
+        </div>
+      </div>
+      <ul class="nav-bar-items">
+        <li><a href="inicio.html">Inicio</a></li>
+        <li><a href="forum.html">Fórum</a></li>
+        <li><a href="perfil.html">Perfil</a></li>
+        <li><a href="rank.html">Empoyer</a></li>
+        <li><a href="instituto.html">Fundação</a></li>
+        <li class="active"><a href="faq.html">FAQ</a></li>
+      </ul>
+    </nav>
+    <!----------------------------------------------- nav bar --------------------------------------------------------------->
+     <!--Drawer Responsive-->
+     <div id="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+  </div>
+  <div id="nav">
+
+      <div style="display: flex; flex-direction: column;">
+          <div class="super-container-drawer">
+              <img src="img/joana-photo.svg">
+              <div class="container-drawer-profile">
+                  <h3 class="h3profile">Joana Ramos</h3>
+                  <p class="pprofile">Estagiaria de RH</p>
+              </div>
+          </div>
+
+          <ul class="uldrawer">
+              <li class="lidrawer">
+                  <a class="a-drawer" href="index.html">Inicio</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer" href="forum.html">Forum</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer" href="perfil.html">Perfil</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer" href="rank.html">Empoyer</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer" href="instituto.html">Fundação</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer active" href="faq.html">FAQ</a>
+              </li>
+              <li class="lidrawer">
+                  <a class="a-drawer" href="login.html">Logout</a>
+              </li>
+
+          </ul>
+      </div>
+  </div>
+  </div>
+  <!--Drawer Responsive-->
+    <main
+      class="d-flex flex-column gap-5 justify-content-center align-items-center"
+    >
+      <div
+        class="d-flex align-items-center justify-content-center faq-banner"
+      ></div>
+
+      <div
+        class="bg-light d-flex justify-content-center flex-column align-items-center gap-3 w-100"
+      >
+        <h1 class="text-schneider-color">Perguntas Populares</h1>
+
+        <div class="container mt-4">
+          <div class="custom-accordion-container gap-4 d-flex flex-column">
+            <div class="accordion" id="meuAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header custom-accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button">
+                    Como posso adicionar colegas de equipe à minha rede de contatos?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#meuAccordion">
+                  <div class="accordion-body">
+                    Adicionar seus colegas na rua rede de contatos é tão facil quanto em outras redes que você talvez até ja conheça! Basta buscar pelo nome de alguém na barra de pesquisa, e no perfil da pessoa clicar em "adicionar"
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="meuAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button">
+                    É possível compartilhar documentos e arquivos na rede social corporativa?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#meuAccordion">
+                  <div class="accordion-body">
+                    Na mySchneider você pode livremente compartilhar imagens e videos no seu feed. Basta ir na página inicial e clicar em "escrever post" e no icone de anexar arquivos, selecionar no seu desktop o que deseja compartilhar!
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="meuAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button">
+                    Como eu ganho pontuações na plataforma?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#meuAccordion">
+                  <div class="accordion-body">
+                    Na mySchneider os pontos são adquiridos por meio de interação na plataforma! Ao responder perguntas no fórum, realizar cursos, fazer login na plataforma, interagir com os posts de seus colegas ou participar de competições você acumula pontos.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="meuAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button">
+                    Como faço para receber notificações relevantes e evitar sobrecarga de informações?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#meuAccordion">
+                  <div class="accordion-body">
+                    Oferecemos na mySchneider a possibilidade de receber notificações apenas de postagens em que você foi marcado! Para isso, vá em perfil > configurações > privacidade > notificações e seleciona a opção que melhor te atende.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="meuAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button">
+                    É possível fazer mensagens privadas para colegas de equipe?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#meuAccordion">
+                  <div class="accordion-body">
+                    A mySchneider integra os chats do microsoft teams como forma de comunicação privida entre dois usuários. 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="meuAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button">
+                    O que devo fazer se encontrar conteúdo inadequado ou violações das políticas de uso?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#meuAccordion">
+                  <div class="accordion-body">
+                    No caso de violação de políticas de uso e demais infrações, reporte ao RH da empresa via nossa integração com o microsoft teams acompanhando uma captura de tela da infração. No final da página "FAQ" é possivel encontrar os termos de uso.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion" id="meuAccordion">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button">
+                    Como faço para comentar em postagens e iniciar discussões relevantes?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#meuAccordion">
+                  <div class="accordion-body">
+                    Para comentar em uma postagem do fórum, na comunidade que está inserido, clique em cima da postagem a ser comentada e uma nova aba à direita contendo os comentários e o campo para escrever a sua mensagem irá aparecer.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="d-flex flex-column align-items-center justify-content-center gap-5"
+      >
+        <h1 class="text-decoration-underline">Políticas de Uso</h1>
+        <p>
+          Para garantir um ambiente seguro e inclusivo para todos os usuários,
+          temos algumas políticas de uso que devem ser seguidas:
+        </p>
+        <div
+          class="d-flex gap-5 align-items-center justify-content-center px-5 py-2"
+        >
+          <span
+            class="bg-white text-center px-3 py-4 fw-bolder shadow"
+            style="width: 20vw"
+          >
+            <p class="text-schneider-color fs-5">Proibição de Discriminação</p>
+            <p>
+              Não toleramos qualquer forma de discriminação com base em raça,
+              gênero, orientação sexual, religião, nacionalidade, ou qualquer
+              outra característica pessoal.
+            </p></span
+          >
+          <span
+            class="bg-white text-center px-3 py-3 fw-bolder shadow"
+            style="width: 20vw"
+          >
+            <p class="text-schneider-color fs-5">Promoção da Igualdade</p>
+            <p>
+              Encorajamos ativamente a promoção da igualdade de oportunidades e
+              o respeito pela diversidade. Compartilhe suas opiniões e ideias de
+              forma construtiva e respeitosa.
+            </p></span
+          >
+          <span
+            class="bg-white text-center px-3 py-4 fw-bolder shadow"
+            style="width: 20vw"
+          >
+            <p class="text-schneider-color fs-5">Linguagem Respeitosa</p>
+            <p>
+              Evite o uso de palavras de baixo calão, linguagem ofensiva ou
+              conteúdo que possa causar desconforto ou prejudicar outros
+              usuários.
+            </p></span
+          >
+          <span
+            class="bg-white text-center px-3 py-5 fw-bolder shadow"
+            style="width: 20vw"
+          >
+            <p class="text-schneider-color fs-5">Conteúdo Adequado</p>
+            <p>
+              Conteúdo inadequado, ilegal ou que viole os direitos de terceiros
+              não será tolerado.
+            </p></span
+          >
+        </div>
+      </div>
+    </main>
+
+    <!------------------------------------------- FOOTER ------------------------------------------>
+    <footer
+      class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5"
+    >
+      <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider" />
+
+      <hr class="divider" />
+      <p>© 2023 MySchneider | All Rights Reserved</p>
+    </footer>
+    <script src="js/drawer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Adicionar evento de clique para abrir e fechar o Accordion
+      document.querySelectorAll('.accordion-button').forEach(button => {
+        button.addEventListener('click', () => {
+          const item = button.closest('.accordion-item');
+          if (item) {
+            const collapse = item.querySelector('.accordion-collapse');
+            if (collapse) {
+              collapse.classList.toggle('show');
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
