@@ -4,21 +4,6 @@
     display: none;
 }
 
-#burger:hover {
-    background-color: #3DCD58;
-}
-
-.line {
-    width: 22px;
-    margin-bottom: 5px;
-    height: 2px;
-    background-color: #000;
-}
-
-.line:last-child {
-    margin-bottom: 0;
-}
-
 #nav {
     z-index: 1000;
     height: 600px;
@@ -26,7 +11,7 @@
     display: flex;
     background-color: #FFF;
     color: white;
-    position: fixed;
+    position: absolute;
     left: 0;
     transform: translateX(-100%);
     transition: transform 0.3s linear;
@@ -34,7 +19,7 @@
     border-radius: 8px;
 }
 
-#nav.active {
+#nav.activesuper {
     transform: translateX(0);
 }
 

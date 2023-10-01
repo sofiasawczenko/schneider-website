@@ -2,15 +2,8 @@
     
     #burger{
         display: inline;
-        position: fixed;
-        top: 90%;
-        left: 12%;
-        background: white;
-        padding: 1rem;
-        z-index: 1100;
         cursor: pointer;
         transition: 0.3s linear;
-        box-shadow: 2px 2px 5px gray;
     }   
 
     /* Perfil */
