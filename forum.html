@@ -1,469 +1,436 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Schneider Login</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/shared-items.css" />
+      <link rel="stylesheet" href="css/forum.css" />
+      <link rel="stylesheet" href="css/inicio.css" />
+      <link rel="stylesheet" href="css/drawer.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
+      <link rel="stylesheet" href="../css/my/plus.css" />
+      <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png" />
+      
+   </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schneider Login</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <link rel="stylesheet" href="css/shared-items.css" />
-    <link rel="stylesheet" href="css/forum.css" />
-    <link rel="stylesheet" href="css/inicio.css" />
-    <link rel="stylesheet" href="css/drawer.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="../css/my/plus.css">
-    <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png" />
-</head>
-
-<body>
-    <div class="overflow-hidden">
-        <!----------------------------------------------- nav bar --------------------------------------------------------------->
-        <nav class="remove">
+   <body>
+      <div class="overflow-hidden">
+         <!----------------------------------------------- nav bar --------------------------------------------------------------->
+         <nav class="remove">
             <div class="d-flex justify-content-evenly">
-                <img src="img/schneider-logo.svg" alt="logo da schneider" />
+               <img src="img/schneider-logo.svg" alt="logo da schneider" />
 
-                <div class="d-flex align-items-center">
-                    <input type="text" class="form-control bg-light"
-                        placeholder="Pesquise por pessoas, desafios, assuntos & outros"
-                        aria-label="Example text with button addon" aria-describedby="button-addon1"
-                        style="width: 30vw" />
-                    <button class="btn btn-secondary btn-outline" type="button" id="button-addon1">
-                        <img src="img/search-button-icon.svg" alt="pesquisar" />
-                    </button>
-                </div>
-                <div class="d-flex align-items-center gap-5">
-                    <img src="img/message-icon.svg" alt="messagens" />
-                    <img src="img/notification-icon.svg" alt="notificações" />
-                </div>
-                <div class="d-flex align-items-center">
-                    <img src="img/joana-photo.svg" alt="foto de perfil" />
-                    <p class="pt-3">Joana Ramos</p>
-                    <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px;">
-                        <img class="img-fluid" src="img/share-icon.svg" alt="compartilhar postagem" />
-                    </a>
-                </div>
+               <div class="d-flex align-items-center">
+                  <input type="text" class="form-control bg-light" placeholder="Pesquise por pessoas, desafios, assuntos & outros" aria-label="Example text with button addon" aria-describedby="button-addon1" style="width: 30vw;" />
+                  <button class="btn btn-secondary btn-outline" type="button" id="button-addon1">
+                     <img src="img/search-button-icon.svg" alt="pesquisar" />
+                  </button>
+               </div>
+               <div class="d-flex align-items-center gap-5">
+                  <img src="img/message-icon.svg" alt="messagens" />
+                  <img src="img/notification-icon.svg" alt="notificações" />
+               </div>
+               <div class="d-flex align-items-center">
+                  <img src="img/joana-photo.svg" alt="foto de perfil" />
+                  <p class="pt-3">Joana Ramos</p>
+                  <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px;">
+                     <img class="img-fluid" src="img/open-new-window-2.png" style="width: 15px; height: 15px;" alt="compartilhar postagem" />
+                  </a>
+               </div>
             </div>
             <ul class="nav-bar-items">
-                <li><a href="inicio.html">Inicio</a></li>
-                <li class="active"><a href="forum.html">Fórum</a></li>
-                <li><a href="perfil.html">Perfil</a></li>
-                <li><a href="rank.html">Empoyer</a></li>
-                <li><a href="instituto.html">Fundação</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+               <li><a href="inicio.html">Inicio</a></li>
+               <li class="active"><a href="forum.html">Fórum</a></li>
+               <li><a href="perfil.html">Perfil</a></li>
+               <li><a href="rank.html">Epower</a></li>
+               <li><a href="index.html">Sobre o Projeto</a></li>
+               <li><a href="instituto.html">Fundação</a></li>
+               <li><a href="faq.html">FAQ</a></li>
             </ul>
+         </nav>
+         <!----------------------------------------------- nav bar --------------------------------------------------------------->
+          <!-------------------------------Drawer Responsive----------------------------------------->
+      <nav class="navbar-mobile bg-light">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top d-lg-none">
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
+              <div class="navbar-menu-img">
+                 <img src="img/navbar-menu2.svg" style="width: 20px;" alt="navbar menu" />
+              </div>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav ml-auto">
+                 <li class="nav-item">
+                    <a class="nav-link" href="inicio.html">Inicio</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="forum.html">Forum</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="perfil.html">Perfil</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="rank.html">Epower</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="index.html">Sobre o Projeto</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="instituto.html">Fundação</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="login.html">Logout</a>
+                 </li>
+              </ul>
+           </div>
+
+           <a class="navbar-brand text-white d-flex align-items-center" href="#!">
+              <div class="imagem-joana">
+                 <div class="super-container-drawer">
+                    <img src="img/joana-photo.svg" />
+                 </div>
+              </div>
+              <span class="nome-joana text-black">Joana Ramos</span>
+           </a>
         </nav>
-        <!----------------------------------------------- nav bar --------------------------------------------------------------->
-        <!--Drawer Responsive-->
-        <div id="burger">
-            <img src="img/hamburger.svg">
-        </div>
-        <div id="nav">
+     </nav>
 
-            <div style="display: flex; flex-direction: column;">
-                <div class="super-container-drawer">
-                    <img src="img/joana-photo.svg">
-                    <div class="container-drawer-profile">
-                        <h3 class="h3profile">Joana Ramos</h3>
-                        <p class="pprofile">Estagiaria de RH</p>
-                    </div>
-                </div>
-
-                <ul class="uldrawer">
-                    <li class="lidrawer">
-                        <a class="a-drawer active" href="index.html">Inicio</a>
-                    </li>
-                    <li class="lidrawer">
-                        <a class="a-drawer" href="forum.html">Forum</a>
-                    </li>
-                    <li class="lidrawer">
-                        <a class="a-drawer" href="perfil.html">Perfil</a>
-                    </li>
-                    <li class="lidrawer">
-                        <a class="a-drawer" href="rank.html">Empoyer</a>
-                    </li>
-                    <li class="lidrawer">
-                        <a class="a-drawer" href="instituto.html">Fundação</a>
-                    </li>
-                    <li class="lidrawer">
-                        <a class="a-drawer" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="lidrawer">
-                        <a class="a-drawer" href="login.html">Logout</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--Drawer Responsive-->
-    <!--Start Carousel-->
-    <header class="row">
-        <div class="col-md-12">
+     <!-----------------------------END Drawer Responsive----------------------------------------->
+     
+      <!--Start Carousel-->
+      <header class="row">
+         <div class="col-md-12">
             <div class="carousel slide multi-item-carousel" id="theCarousel">
-                <div class="carousel-inner">
+               <div class="carousel-inner">
+                  <!--Item Carousel 2-->
+                  <div class="item">
+                     <div class="col-xs-4">
+                        <a href="#1"><img src="img/receitas.svg" style="max-width: 300px; max-height: 300px;" /></a>
+                     </div>
+                  </div>
+                  <!-- End Item Carousel 2-->
 
-                    <!--Item Carousel 2-->
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="img/receitas.svg"
-                                    style="max-width: 300px; max-height: 300px;"></a>
-                        </div>
-                    </div>
-                    <!-- End Item Carousel 2-->
+                  <!--Item Carousel 3-->
+                  <div class="item">
+                     <div class="col-xs-4">
+                        <a href="#1"><img src="img/lgbttopic.svg" style="max-width: 300px; max-height: 300px;" /></a>
+                     </div>
+                  </div>
+                  <!-- End Item Carousel 3-->
 
-                    <!--Item Carousel 3-->
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="img/lgbttopic.svg"
-                                    style="max-width: 300px; max-height: 300px;"></a>
-                        </div>
-                    </div>
-                    <!-- End Item Carousel 3-->
+                  <!--Item Carousel 4-->
+                  <div class="item">
+                     <div class="col-xs-4">
+                        <a href="#1"><img src="img/eletric.svg" style="max-width: 300px; max-height: 300px;" /></a>
+                     </div>
+                  </div>
+                  <!-- End Item Carousel 4-->
 
-                    <!--Item Carousel 4-->
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="img/eletric.svg"
-                                    style="max-width: 300px; max-height: 300px;"></a>
-                        </div>
-                    </div>
-                    <!-- End Item Carousel 4-->
+                  <!--Item Carousel 5-->
+                  <div class="item">
+                     <div class="col-xs-4">
+                        <a href="#1"><img src="img/tecnologoy.svg" style="max-width: 300px; max-height: 300px;" /></a>
+                     </div>
+                  </div>
+                  <!-- End Item Carousel 5-->
 
-                    <!--Item Carousel 5-->
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="img/tecnologoy.svg"
-                                    style="max-width: 300px; max-height: 300px;"></a>
-                        </div>
-                    </div>
-                    <!-- End Item Carousel 5-->
+                  <!--Item Carousel 6-->
+                  <div class="item">
+                     <div class="col-xs-4">
+                        <a href="#1"><img src="img/agro.svg" style="max-width: 300px; max-height: 300px;" /></a>
+                     </div>
+                  </div>
+                  <!-- End Item Carousel 6-->
 
-                    <!--Item Carousel 6-->
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="img/agro.svg"
-                                    style="max-width: 300px; max-height: 300px;"></a>
-                        </div>
-                    </div>
-                    <!-- End Item Carousel 6-->
+                  <!--Item Carousel 7-->
+                  <div class="item">
+                     <div class="col-xs-4">
+                        <a href="#1"><img src="img/engenharia.svg" style="max-width: 300px; max-height: 300px;" /></a>
+                     </div>
+                  </div>
+                  <!-- End Item Carousel -->
+               </div>
 
-                    <!--Item Carousel 7-->
-                    <div class="item">
-                        <div class="col-xs-4"><a href="#1"><img src="img/engenharia.svg"
-                                    style="max-width: 300px; max-height: 300px;"></a>
-                        </div>
-                    </div>
-                    <!-- End Item Carousel -->
-                </div>
-
-                <!-- Button Carousel -->
-                <a class="carousel-control-prev " href="#theCarousel" role="button" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#theCarousel" role="button" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </a>
-                <!-- End Button Carousel -->
+               <!-- Button Carousel -->
+               <a class="carousel-control-prev" href="#theCarousel" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#theCarousel" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+               </a>
+               <!-- End Button Carousel -->
             </div>
-        </div>
-    </header>
-    <!--End Start Carousel-->
-    <main class="mt-4">
-
-        <div class="container">
+         </div>
+      </header>
+      <!--End Start Carousel-->
+      <main class="mt-4">
+         <div class="container">
             <div class="row">
-                <div class="col-8 d-flex flex-column gap-5">
-                    <div class="bg-white d-flex flex-column rounded shadow p-3">
-                        <p>Dúvida: <strong>Poderiam me dar dicas de como economizar mais energia em minha residência
-                                ?</strong></p>
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex gap-2">
-                                <img src="https://source.unsplash.com/random/50x50/?man" style="border-radius: 999px;"
-                                    alt="foto de perfil">
-                                <span class="d-flex flex-column pt-2">
-                                    <p style="margin-bottom: -0.3rem;">André Nogueira</p>
-                                    <small class="text-secondary">Analista de qualidade</small>
-                                </span>
-                            </div>
-                            <button class="btn bg-button-action align-self-end px-4" data-bs-toggle="modal"
-                                data-bs-target="#meuModal">
-                                Ver mais
-                            </button>
+               <div class="col-8 d-flex flex-column gap-5">
+                  <div class="bg-white d-flex flex-column rounded shadow p-3">
+                     <p>Dúvida: <strong>Poderiam me dar dicas de como economizar mais energia em minha residência ?</strong></p>
+                     <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-2">
+                           <img src="https://source.unsplash.com/random/50x50/?man" style="border-radius: 999px;" alt="foto de perfil" />
+                           <span class="d-flex flex-column pt-2">
+                              <p style="margin-bottom: -0.3rem;">André Nogueira</p>
+                              <small class="text-secondary">Analista de qualidade</small>
+                           </span>
                         </div>
-                    </div>
-                    <div class="bg-white d-flex flex-column rounded shadow p-3">
-                        <p>Dúvida: <strong>E aí, pessoal! Alguém tem dicas práticas para melhorar a pega do bebê durante
-                                a amamentação?</strong></p>
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex gap-2">
-                                <img src="https://source.unsplash.com/random/50x50/?woman" style="border-radius: 999px;"
-                                    alt="foto de perfil">
-                                <span class="d-flex flex-column pt-2">
-                                    <p style="margin-bottom: -0.3rem;">Maria Gonçalves</p>
-                                    <small class="text-secondary">Tech Recruiter</small>
-                                </span>
-                            </div>
-                            <button class="btn bg-button-action align-self-end px-4" data-bs-toggle="modal"
-                                data-bs-target="#modal2">
-                                Ver mais
-                            </button>
-                        </div>
-                    </div>
-                    <div class="bg-white d-flex flex-column rounded shadow p-3">
-                        <p>Dúvida: <strong>Gente, alguma mãe aqui teve problemas com a produção de leite? Como vocês
-                                lidaram com isso?</strong></p>
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex gap-2">
-                                <img src="https://source.unsplash.com/random/50x51/?woman" style="border-radius: 999px;"
-                                    alt="foto de perfil">
-                                <span class="d-flex flex-column pt-2">
-                                    <p style="margin-bottom: -0.3rem;">Patricia Amano</p>
-                                    <small class="text-secondary">Customer Sucess</small>
-                                </span>
-                            </div>
-                            <button class="btn bg-button-action align-self-end px-4" data-bs-toggle="modal"
-                                data-bs-target="#modal3">
-                                Ver mais
-                            </button>
-                        </div>
-                    </div>
-                    <div class="bg-white d-flex flex-column rounded shadow p-3">
-                        <p>Dúvida: <strong> Quem aí já se envolveu em serviço voluntário? O que vocês acharam mais
-                                gratificante?</strong></p>
-                        <div class="d-flex justify-content-between">
-                            <div class="d-flex gap-2">
-                                <img src="https://source.unsplash.com/random/50x51/?man" style="border-radius: 999px;"
-                                    alt="foto de perfil">
-                                <span class="d-flex flex-column pt-2">
-                                    <p style="margin-bottom: -0.3rem;">Webert Rocha</p>
-                                    <small class="text-secondary">Head de Atendimento</small>
-                                </span>
-                            </div>
-                            <button class="btn bg-button-action align-self-end px-4" data-bs-toggle="modal"
-                                data-bs-target="#modal4">
-                                Ver mais
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4 d-flex align-items-center flex-column">
-                    <div class="d-flex align-items-center">
-                        <button class="btn bg-button-action align-self-end px-5 py-2">
-                            Publique suas dúvidas
+                        <button class="btn bg-button-action align-self-end px-4" data-bs-toggle="modal" data-bs-target="#meuModal">
+                           Ver mais
                         </button>
-                    </div>
-                    <div class="bg-white mt-5 ps-3 pe-5 py-3">
-                        <p class="fw-bolder">Grupo de conversas</p>
-
-                        <div class="mt-5">
-                            <p class="fst-italic">Schneider Programmers</p>
-                            <button class="btn bg-button-action align-self-end">Entrar no grupo do Teams</button>
+                     </div>
+                  </div>
+                  <div class="bg-white d-flex flex-column rounded shadow p-3">
+                     <p>Dúvida: <strong>E aí, pessoal! Alguém tem dicas práticas para melhorar a pega do bebê durante a amamentação?</strong></p>
+                     <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-2">
+                           <img src="https://source.unsplash.com/random/50x50/?woman" style="border-radius: 999px;" alt="foto de perfil" />
+                           <span class="d-flex flex-column pt-2">
+                              <p style="margin-bottom: -0.3rem;">Maria Gonçalves</p>
+                              <small class="text-secondary">Tech Recruiter</small>
+                           </span>
                         </div>
-
-                        <div class="mt-5">
-                            <p class="fst-italic">Grupo do marketing</p>
-                            <button class="btn bg-button-action align-self-end">Entrar no grupo do Teams</button>
+                        <button class="btn bg-button-action align-self-end px-4" data-bs-toggle="modal" data-bs-target="#modal2">
+                           Ver mais
+                        </button>
+                     </div>
+                  </div>
+                  <div class="bg-white d-flex flex-column rounded shadow p-3">
+                     <p>Dúvida: <strong>Gente, alguma mãe aqui teve problemas com a produção de leite? Como vocês lidaram com isso?</strong></p>
+                     <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-2">
+                           <img src="https://source.unsplash.com/random/50x51/?woman" style="border-radius: 999px;" alt="foto de perfil" />
+                           <span class="d-flex flex-column pt-2">
+                              <p style="margin-bottom: -0.3rem;">Patricia Amano</p>
+                              <small class="text-secondary">Customer Sucess</small>
+                           </span>
                         </div>
-                    </div>
-                </div>
+                        <button class="btn bg-button-action align-self-end px-4" data-bs-toggle="modal" data-bs-target="#modal3">
+                           Ver mais
+                        </button>
+                     </div>
+                  </div>
+                  <div class="bg-white d-flex flex-column rounded shadow p-3">
+                     <p>Dúvida: <strong> Quem aí já se envolveu em serviço voluntário? O que vocês acharam mais gratificante?</strong></p>
+                     <div class="d-flex justify-content-between">
+                        <div class="d-flex gap-2">
+                           <img src="https://source.unsplash.com/random/50x51/?man" style="border-radius: 999px;" alt="foto de perfil" />
+                           <span class="d-flex flex-column pt-2">
+                              <p style="margin-bottom: -0.3rem;">Webert Rocha</p>
+                              <small class="text-secondary">Head de Atendimento</small>
+                           </span>
+                        </div>
+                        <button class="btn bg-button-action align-self-end px-4" data-bs-toggle="modal" data-bs-target="#modal4">
+                           Ver mais
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-4 d-flex align-items-center flex-column">
+                  <div class="d-flex align-items-center">
+                     <button class="btn bg-button-action align-self-end px-5 py-2">
+                        Publique suas dúvidas
+                     </button>
+                  </div>
+                  <div class="bg-white mt-5 ps-3 pe-5 py-3">
+                     <p class="fw-bolder">Grupo de conversas</p>
+
+                     <div class="mt-5">
+                        <p class="fst-italic">Schneider Programmers</p>
+                        <button class="btn bg-button-action align-self-end">Entrar no grupo do Teams</button>
+                     </div>
+
+                     <div class="mt-5">
+                        <p class="fst-italic">Grupo do marketing</p>
+                        <button class="btn bg-button-action align-self-end">Entrar no grupo do Teams</button>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </main>
+         </div>
+      </main>
 
-    <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal fade" id="meuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                </div>
-                <div class="modal-body">
+               <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="d-flex flex-column justify-content-between gap-2">
+                     <div class="d-flex gap-2">
+                        <img src="https://source.unsplash.com/random/50x50/?man" style="border-radius: 999px;" alt="foto de perfil" />
+                        <span class="d-flex flex-column pt-2">
+                           <p style="margin-bottom: -0.3rem;">André Nogueira</p>
+                           <small class="text-secondary">Analista de qualidade</small>
+                        </span>
+                     </div>
+                     <div class="mt-4">
+                        <p class="fw-bolder">Poderiam me dar dias de como economizar mais energia em minha residência ?</p>
+                        <p>Atualmente estou gastando muito com energia preciso encontrar meios de como economizar</p>
+                     </div>
+                  </div>
 
-                    <div class="d-flex flex-column justify-content-between gap-2">
-                        <div class="d-flex gap-2">
-                            <img src="https://source.unsplash.com/random/50x50/?man" style="border-radius: 999px;"
-                                alt="foto de perfil">
-                            <span class="d-flex flex-column pt-2">
-                                <p style="margin-bottom: -0.3rem;">André Nogueira</p>
-                                <small class="text-secondary">Analista de qualidade</small>
-                            </span>
-                        </div>
-                        <div class="mt-4">
-                            <p class="fw-bolder">Poderiam me dar dias de como economizar mais energia em minha
-                                residência ?</p>
-                            <p>Atualmente estou gastando muito com energia preciso encontrar meios de como economizar
-                            </p>
-                        </div>
-                    </div>
+                  <hr style="width: 100%; height: 1rem; color: blue;" />
+                  <p>Respostas:</p>
 
-                    <hr style="width: 100%; height: 1rem; color: blue;">
-                    <p>Respostas:</p>
-
-                    <div class="d-flex flex-column justify-content-between gap-2">
-                        <div class="d-flex gap-2">
-                            <img src="img/joana-photo.svg" style="border-radius: 999px;" alt="foto de perfil">
-                            <span class="d-flex flex-column pt-2">
-                                <p style="margin-bottom: -0.3rem;">Joana Ramos</p>
-                                <small class="text-secondary">Estagiária de RH</small>
-                            </span>
-                        </div>
-                        <div class="mt-4">
-                            <p>Você pode tentar substituir o hábito de assistir televisão por leitura, assim conseguirá
-                                expandir seu conhecimento e economizar energia</p>
-                        </div>
-                    </div>
-                </div>
+                  <div class="d-flex flex-column justify-content-between gap-2">
+                     <div class="d-flex gap-2">
+                        <img src="img/joana-photo.svg" style="border-radius: 999px;" alt="foto de perfil" />
+                        <span class="d-flex flex-column pt-2">
+                           <p style="margin-bottom: -0.3rem;">Joana Ramos</p>
+                           <small class="text-secondary">Estagiária de RH</small>
+                        </span>
+                     </div>
+                     <div class="mt-4">
+                        <p>Você pode tentar substituir o hábito de assistir televisão por leitura, assim conseguirá expandir seu conhecimento e economizar energia</p>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
+         </div>
+      </div>
 
-    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                </div>
-                <div class="modal-body">
+               <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="d-flex flex-column justify-content-between gap-2">
+                     <div class="d-flex gap-2">
+                        <img src="https://source.unsplash.com/random/50x50/?woman" style="border-radius: 999px;" alt="foto de perfil" />
+                        <span class="d-flex flex-column pt-2">
+                           <p style="margin-bottom: -0.3rem;">Maria Gonçalves</p>
+                           <small class="text-secondary">Tech Recruiter</small>
+                        </span>
+                     </div>
+                     <div class="mt-4">
+                        <p class="fw-bolder">E aí, pessoal! Alguém tem dicas práticas para melhorar a pega do bebê durante a amamentação?</p>
+                        <p>Vou ter um bebê em breve e estou procurando dicas de quem já passou por isso</p>
+                     </div>
+                  </div>
 
-                    <div class="d-flex flex-column justify-content-between gap-2">
-                        <div class="d-flex gap-2">
-                            <img src="https://source.unsplash.com/random/50x50/?woman" style="border-radius: 999px;"
-                                alt="foto de perfil">
-                            <span class="d-flex flex-column pt-2">
-                                <p style="margin-bottom: -0.3rem;">Maria Gonçalves</p>
-                                <small class="text-secondary">Tech Recruiter</small>
-                            </span>
-                        </div>
-                        <div class="mt-4">
-                            <p class="fw-bolder">E aí, pessoal! Alguém tem dicas práticas para melhorar a pega do bebê
-                                durante a amamentação?</p>
-                            <p>Vou ter um bebê em breve e estou procurando dicas de quem já passou por isso</p>
-                        </div>
-                    </div>
+                  <hr style="width: 100%; height: 1rem; color: blue;" />
+                  <p>Respostas:</p>
 
-                    <hr style="width: 100%; height: 1rem; color: blue;">
-                    <p>Respostas:</p>
-
-                    <div class="d-flex flex-column justify-content-between gap-2">
-                        <div class="d-flex gap-2">
-                            <img src="img/joana-photo.svg" style="border-radius: 999px;" alt="foto de perfil">
-                            <span class="d-flex flex-column pt-2">
-                                <p style="margin-bottom: -0.3rem;">Joana Ramos</p>
-                                <small class="text-secondary">Estagiária de RH</small>
-                            </span>
-                        </div>
-                        <div class="mt-4">
-                            <p>Oi! Claro, o truque é posicionar o bebê com a boca bem aberta, garantindo que ele
-                                abocanhe não só o mamilo, mas também parte da aréola. Isso vai ajudar a evitar
-                                desconfortos.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                  <div class="d-flex flex-column justify-content-between gap-2">
+                     <div class="d-flex gap-2">
+                        <img src="img/joana-photo.svg" style="border-radius: 999px;" alt="foto de perfil" />
+                        <span class="d-flex flex-column pt-2">
+                           <p style="margin-bottom: -0.3rem;">Joana Ramos</p>
+                           <small class="text-secondary">Estagiária de RH</small>
+                        </span>
+                     </div>
+                     <div class="mt-4">
+                        <p>Oi! Claro, o truque é posicionar o bebê com a boca bem aberta, garantindo que ele abocanhe não só o mamilo, mas também parte da aréola. Isso vai ajudar a evitar desconfortos.</p>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
+         </div>
+      </div>
 
-    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                </div>
-                <div class="modal-body">
+               <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="d-flex flex-column justify-content-between gap-2">
+                     <div class="d-flex gap-2">
+                        <img src="https://source.unsplash.com/random/50x51/?woman" style="border-radius: 999px;" alt="foto de perfil" />
+                        <span class="d-flex flex-column pt-2">
+                           <p style="margin-bottom: -0.3rem;">Patricia Amano</p>
+                           <small class="text-secondary">Customer Sucess</small>
+                        </span>
+                     </div>
+                     <div class="mt-4">
+                        <p class="fw-bolder">Gente, alguma mãe aqui teve problemas com a produção de leite? Como vocês lidaram com isso?</p>
+                        <p>Estou na minha primeira maternidade e estou tendo esses problemas :(</p>
+                     </div>
+                  </div>
 
-                    <div class="d-flex flex-column justify-content-between gap-2">
-                        <div class="d-flex gap-2">
-                            <img src="https://source.unsplash.com/random/50x51/?woman" style="border-radius: 999px;"
-                                alt="foto de perfil">
-                            <span class="d-flex flex-column pt-2">
-                                <p style="margin-bottom: -0.3rem;">Patricia Amano</p>
-                                <small class="text-secondary">Customer Sucess</small>
-                            </span>
-                        </div>
-                        <div class="mt-4">
-                            <p class="fw-bolder">Gente, alguma mãe aqui teve problemas com a produção de leite? Como
-                                vocês lidaram com isso?</p>
-                            <p>Estou na minha primeira maternidade e estou tendo esses problemas :(</p>
-                        </div>
-                    </div>
+                  <hr style="width: 100%; height: 1rem; color: blue;" />
+                  <p>Respostas:</p>
 
-                    <hr style="width: 100%; height: 1rem; color: blue;">
-                    <p>Respostas:</p>
-
-                    <div class="d-flex flex-column justify-content-between gap-2">
-                        <div class="d-flex gap-2">
-                            <img src="img/joana-photo.svg" style="border-radius: 999px;" alt="foto de perfil">
-                            <span class="d-flex flex-column pt-2">
-                                <p style="margin-bottom: -0.3rem;">Joana Ramos</p>
-                                <small class="text-secondary">Estagiária de RH</small>
-                            </span>
-                        </div>
-                        <div class="mt-4">
-                            <p>Eu passei por isso! Beber bastante água e tentar relaxar ajudou muito. Além disso, a
-                                consulta com um especialista em lactação foi essencial.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                  <div class="d-flex flex-column justify-content-between gap-2">
+                     <div class="d-flex gap-2">
+                        <img src="img/joana-photo.svg" style="border-radius: 999px;" alt="foto de perfil" />
+                        <span class="d-flex flex-column pt-2">
+                           <p style="margin-bottom: -0.3rem;">Joana Ramos</p>
+                           <small class="text-secondary">Estagiária de RH</small>
+                        </span>
+                     </div>
+                     <div class="mt-4">
+                        <p>Eu passei por isso! Beber bastante água e tentar relaxar ajudou muito. Além disso, a consulta com um especialista em lactação foi essencial.</p>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
+         </div>
+      </div>
 
-    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                </div>
-                <div class="modal-body">
+               <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+               </div>
+               <div class="modal-body">
+                  <div class="d-flex flex-column justify-content-between gap-2">
+                     <div class="d-flex gap-2">
+                        <img src="https://source.unsplash.com/random/50x51/?man" style="border-radius: 999px;" alt="foto de perfil" />
+                        <span class="d-flex flex-column pt-2">
+                           <p style="margin-bottom: -0.3rem;">Webert Rocha</p>
+                           <small class="text-secondary">Head de Atendimento</small>
+                        </span>
+                     </div>
+                     <div class="mt-4">
+                        <p class="fw-bolder">Quem aí já se envolveu em serviço voluntário? O que vocês acharam mais gratificante?</p>
+                        <p>Estou vendo alguns programas para me voluntariar, mas nunca fui</p>
+                     </div>
+                  </div>
 
-                    <div class="d-flex flex-column justify-content-between gap-2">
-                        <div class="d-flex gap-2">
-                            <img src="https://source.unsplash.com/random/50x51/?man" style="border-radius: 999px;"
-                                alt="foto de perfil">
-                            <span class="d-flex flex-column pt-2">
-                                <p style="margin-bottom: -0.3rem;">Webert Rocha</p>
-                                <small class="text-secondary">Head de Atendimento</small>
-                            </span>
-                        </div>
-                        <div class="mt-4">
-                            <p class="fw-bolder">Quem aí já se envolveu em serviço voluntário? O que vocês acharam mais
-                                gratificante?</p>
-                            <p>Estou vendo alguns programas para me voluntariar, mas nunca fui</p>
-                        </div>
-                    </div>
+                  <hr style="width: 100%; height: 1rem; color: blue;" />
+                  <p>Respostas:</p>
 
-                    <hr style="width: 100%; height: 1rem; color: blue;">
-                    <p>Respostas:</p>
-
-                    <div class="d-flex flex-column justify-content-between gap-2">
-                        <div class="d-flex gap-2">
-                            <img src="img/joana-photo.svg" style="border-radius: 999px;" alt="foto de perfil">
-                            <span class="d-flex flex-column pt-2">
-                                <p style="margin-bottom: -0.3rem;">Joana Ramos</p>
-                                <small class="text-secondary">Estagiária de RH</small>
-                            </span>
-                        </div>
-                        <div class="mt-4">
-                            <p>Eu já! O mais incrível foi ver o impacto direto na vida das pessoas que estávamos
-                                ajudando. Sem contar que conheci pessoas maravilhosas!
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                  <div class="d-flex flex-column justify-content-between gap-2">
+                     <div class="d-flex gap-2">
+                        <img src="img/joana-photo.svg" style="border-radius: 999px;" alt="foto de perfil" />
+                        <span class="d-flex flex-column pt-2">
+                           <p style="margin-bottom: -0.3rem;">Joana Ramos</p>
+                           <small class="text-secondary">Estagiária de RH</small>
+                        </span>
+                     </div>
+                     <div class="mt-4">
+                        <p>Eu já! O mais incrível foi ver o impacto direto na vida das pessoas que estávamos ajudando. Sem contar que conheci pessoas maravilhosas!</p>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
+         </div>
+      </div>
 
-    <!-- Start Footer -->
-    <footer class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5">
-        <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider">
+      <!-- Start Footer -->
+      <footer class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5">
+         <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider" />
 
-        <hr class="divider">
-        <p>© 2023 MySchneider | All Rights Reserved</p>
-    </footer>
-    <!-- End Footer -->
-    <script src="js/drawer.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
+         <hr class="divider" />
+         <p>© 2023 MySchneider | All Rights Reserved</p>
+      </footer>
+      <!-- End Footer -->
+      <script src="js/drawer.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+   </body>
 </html>
