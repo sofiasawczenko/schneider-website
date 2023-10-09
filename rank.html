@@ -1,311 +1,309 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Ranking</title>
+      <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Varela+Round&display=swap" rel="stylesheet" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+      <link rel="stylesheet" href="css/rank.css" />
+      <link rel="stylesheet" href="css/mini.css" />
+      <link rel="stylesheet" href="css/shared-items.css" />
+      <link rel="stylesheet" href="css/drawer.css" />
+      <script src="js/drawer.js"></script>
+      <script src="js/rank.js"></script>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ranking</title>
-    <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Varela+Round&display=swap"
-        rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/rank.css" />
-    <link rel="stylesheet" href="css/mini.css" />
-    <link rel="stylesheet" href="css/shared-items.css" />
-    <link rel="stylesheet" href="css/drawer.css" />
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
+   </head>
 
-<body>
-    <!----------------------------------------------- nav bar --------------------------------------------------------------->
-    <nav class="remove">
-        <div class="d-flex justify-content-evenly">
+   <body>
+      <!----------------------------------------------- nav bar --------------------------------------------------------------->
+      <nav class="remove">
+         <div class="d-flex justify-content-evenly">
             <img src="img/schneider-logo.svg" alt="logo da schneider" />
 
             <div class="d-flex align-items-center">
-                <input type="text" class="form-control bg-light"
-                    placeholder="Pesquise por pessoas, desafios, assuntos & outros"
-                    aria-label="Example text with button addon" aria-describedby="button-addon1" style="width: 30vw" />
-                <button class="btn btn-secondary btn-outline" type="button" id="button-addon1">
-                    <img src="img/search-button-icon.svg" alt="pesquisar" />
-                </button>
+               <input type="text" class="form-control bg-light" placeholder="Pesquise por pessoas, desafios, assuntos & outros" aria-label="Example text with button addon" aria-describedby="button-addon1" style="width: 30vw;" />
+               <button class="btn btn-secondary btn-outline" type="button" id="button-addon1">
+                  <img src="img/search-button-icon.svg" alt="pesquisar" />
+               </button>
             </div>
             <div class="d-flex align-items-center gap-5">
-                <img src="img/message-icon.svg" alt="messagens" />
-                <img src="img/notification-icon.svg" alt="notificações" />
+               <img src="img/message-icon.svg" alt="messagens" />
+               <img src="img/notification-icon.svg" alt="notificações" />
             </div>
             <div class="d-flex align-items-center">
-                <img src="img/joana-photo.svg" alt="foto de perfil" />
-                <p class="pt-3">Joana Ramos</p>
-                <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px">
-                    <img class="img-fluid" src="img/share-icon.svg" alt="compartilhar postagem" />
-                </a>
+               <img src="img/joana-photo.svg" alt="foto de perfil" />
+               <p class="pt-3">Joana Ramos</p>
+               <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px;">
+                  <img class="img-fluid" src="img/open-new-window-2.png" style="width: 15px; height: 15px;" alt="compartilhar postagem" />
+               </a>
             </div>
-        </div>
-        <ul class="nav-bar-items">
+         </div>
+         <ul class="nav-bar-items">
             <li><a href="inicio.html">Inicio</a></li>
             <li><a href="forum.html">Fórum</a></li>
             <li><a href="perfil.html">Perfil</a></li>
-            <li class="active"><a href="rank.html">Empoyer</a></li>
+            <li class="active"><a href="rank.html">Epower</a></li>
+            <li><a href="index.html">Sobre o Projeto</a></li>
             <li><a href="instituto.html">Fundação</a></li>
             <li><a href="faq.html">FAQ</a></li>
-        </ul>
-    </nav>
-    <!----------------------------------------------- nav bar --------------------------------------------------------------->
+         </ul>
+      </nav>
+      <!----------------------------------------------- nav bar --------------------------------------------------------------->
 
-    <!--Drawer Responsive-->
-    <div id="burger">
-        <img src="img/hamburger.svg">
-    </div>
-    <div id="nav">
+      <!-------------------------------Drawer Responsive----------------------------------------->
+      <nav class="navbar-mobile bg-light">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top d-lg-none">
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
+              <div class="navbar-menu-img">
+                 <img src="img/navbar-menu2.svg" style="width: 20px;" alt="navbar menu" />
+              </div>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav ml-auto">
+                 <li class="nav-item">
+                    <a class="nav-link" href="inicio.html">Inicio</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="forum.html">Forum</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="perfil.html">Perfil</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="rank.html">Epower</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="index.html">Sobre o Projeto</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="instituto.html">Fundação</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="login.html">Logout</a>
+                 </li>
+              </ul>
+           </div>
 
-        <div style="display: flex; flex-direction: column;">
-            <div class="super-container-drawer">
-                <img src="img/joana-photo.svg">
-                <div class="container-drawer-profile">
-                    <h3 class="h3profile">Joana Ramos</h3>
-                    <p class="pprofile">Estagiaria de RH</p>
-                </div>
-            </div>
+           <a class="navbar-brand text-white d-flex align-items-center" href="#!">
+              <div class="imagem-joana">
+                 <div class="super-container-drawer">
+                    <img src="img/joana-photo.svg" />
+                 </div>
+              </div>
+              <span class="nome-joana text-black">Joana Ramos</span>
+           </a>
+        </nav>
+     </nav>
 
-            <ul class="uldrawer">
-                <li class="lidrawer">
-                    <a class="a-drawer" href="index.html">Inicio</a>
-                </li>
-                <li class="lidrawer">
-                    <a class="a-drawer" href="forum.html">Forum</a>
-                </li>
-                <li class="lidrawer">
-                    <a class="a-drawer" href="perfil.html">Perfil</a>
-                </li>
-                <li class="lidrawer active">
-                    <a class="a-drawer" href="rank.html">Empoyer</a>
-                </li>
-                <li class="lidrawer">
-                    <a class="a-drawer" href="instituto.html">Fundação</a>
-                </li>
-                <li class="lidrawer">
-                    <a class="a-drawer" href="faq.html">FAQ</a>
-                </li>
-                <li class="lidrawer">
-                    <a class="a-drawer" href="login.html">Logout</a>
-                </li>
+     <!-----------------------------END Drawer Responsive----------------------------------------->
 
-            </ul>
-        </div>
-    </div>
-    </div>
-    <!--Drawer Responsive-->
-    <!--Start Header-->
-    <header class="rank-headercontainer">
-        <div class="rank-headerorganize">
+      <!--Drawer Responsive-->
+      <!--Start Header-->
+      <header class="rank-headercontainer">
+         <div class="rank-headerorganize">
             <div class="rank-profile-background"></div>
 
             <div class="rank-organize-1">
+               <div class="rank-column">
+                  <img class="rank-img-profile" src="img/joana-ramos-profile-icon.png" />
+                  <h2>Joana Ramos</h2>
+               </div>
 
-                <div class="rank-column">
-                    <img class="rank-img-profile" src="img/joana-ramos-profile-icon.png">
-                    <h2>Joana Ramos</h2>
-                </div>
-
-                <!--ITEM MID-->
-                <div class="item-mid-container">
-                    <div class="item-mid-subcontainer">
-                        <p class="p-item-mid">Dias com Login</p>
-                        <h1>1</h1>
-                        <p class="p-item-mid"> O seu recorde
-                            é 14 dias seguidos</p>
-                    </div>
-                    <!---->
-                    <div class="container-progress-next">
-                        <p class="p-item-mid">Progresso p/ Nivel</p>
-                        <div class="block">
-                            <div class="box">
-                                <p class="number">
-                                    <span class="num">80</span>
-                                    <span class="sub">%</span>
-                                </p>
-                                <p class="p-item-mid">5704 pontos</p>
-                                <p class="p-item-mid">acumulados</p>
-                            </div>
-                            <span class="dots"></span>
-                            <svg class="svg">
-                                <defs>
-                                    <linearGradient id="gradientStyle">
-                                        <stop offset="0%" stop-color="#3DCD58" />
-                                        <stop offset="100%" stop-color="#3DCD58" />
-                                    </linearGradient>
-                                </defs>
-                                <circle class="circle" cx="90" cy="90" r="80" />
-                            </svg>
+               <!--ITEM MID-->
+               <div class="item-mid-container">
+                  <div class="item-mid-subcontainer">
+                     <p class="p-item-mid">Dias com Login</p>
+                     <h1>1</h1>
+                     <p class="p-item-mid">O seu recorde é 14 dias seguidos</p>
+                  </div>
+                  <!---->
+                  <div class="container-progress-next">
+                     <p class="p-item-mid">Progresso p/ Nivel</p>
+                     <div class="block">
+                        <div class="box">
+                           <p class="number">
+                              <span class="num">80</span>
+                              <span class="sub">%</span>
+                           </p>
+                           <p class="p-item-mid">5704 pontos</p>
+                           <p class="p-item-mid">acumulados</p>
                         </div>
-                        <!---->
-                    </div>
-                </div>
-                <!--ITEM MID-->
-                <div class="container-intg">
-                    <p class="p-item-mid">Interações na Plataforma</p>
-                    <img src="img/rank/mock.svg">
-                </div>
+                        <span class="dots"></span>
+                        <svg class="svg">
+                           <defs>
+                              <linearGradient id="gradientStyle">
+                                 <stop offset="0%" stop-color="#3DCD58" />
+                                 <stop offset="100%" stop-color="#3DCD58" />
+                              </linearGradient>
+                           </defs>
+                           <circle class="circle" cx="90" cy="90" r="80" />
+                        </svg>
+                     </div>
+                     <!---->
+                  </div>
+               </div>
+               <!--ITEM MID-->
+               <div class="container-intg">
+                  <p class="p-item-mid">Interações na Plataforma</p>
+                  <img src="img/rank/mock.svg" />
+               </div>
             </div>
 
             <div class="containermini">
-
-                <!--Mini 1-->
-                <div class="minicontainer">
-                    <div class="minisubcontainer">
-                        <div class="blocktwo">
-                            <div class="boxtwo">
-                                <img src="img/rank/win.svg">
-                            </div>
-                            <span class="dots"></span>
-                            <svg class="svg">
-                                <defs>
-                                    <linearGradient id="gradientStyle">
-                                        <stop offset="0%" stop-color="#3DCD58" />
-                                        <stop offset="100%" stop-color="#3DCD58" />
-                                    </linearGradient>
-                                </defs>
-                                <circle class="circle" cx="90" cy="90" r="80" />
-                            </svg>
+               <!--Mini 1-->
+               <div class="minicontainer">
+                  <div class="minisubcontainer">
+                     <div class="blocktwo">
+                        <div class="boxtwo">
+                           <img src="img/rank/win.svg" />
                         </div>
-                        <h3 class="h3mini">Competições</h3>
-                    </div>
+                        <span class="dots"></span>
+                        <svg class="svg">
+                           <defs>
+                              <linearGradient id="gradientStyle">
+                                 <stop offset="0%" stop-color="#3DCD58" />
+                                 <stop offset="100%" stop-color="#3DCD58" />
+                              </linearGradient>
+                           </defs>
+                           <circle class="circle" cx="90" cy="90" r="80" />
+                        </svg>
+                     </div>
+                     <h3 class="h3mini">Competições</h3>
+                  </div>
 
-                    <div class="minisubcontainer">
-                        <img src="img/rank/separate.svg" style="margin-left: 20px;">
-                        <div>
-                            <p class="number">
-                                <span class="num">11</span>
-                            </p>
-                            <p>Total de Participações</p>
+                  <div class="minisubcontainer">
+                     <img src="img/rank/separate.svg" style="margin-left: 20px;" />
+                     <div>
+                        <p class="number">
+                           <span class="num">11</span>
+                        </p>
+                        <p>Total de Participações</p>
+                     </div>
+                  </div>
+               </div>
+               <!--Mini end 1-->
+
+               <!--Mini 2-->
+               <div class="minicontainer">
+                  <div class="minisubcontainer">
+                     <div class="blocktwo">
+                        <div class="boxtwo">
+                           <img src="img/rank/chat.svg" />
                         </div>
-                    </div>
+                        <span class="dots"></span>
+                        <svg class="svg">
+                           <defs>
+                              <linearGradient id="gradientStyle">
+                                 <stop offset="0%" stop-color="#3DCD58" />
+                                 <stop offset="100%" stop-color="#3DCD58" />
+                              </linearGradient>
+                           </defs>
+                           <circle class="circle" cx="90" cy="90" r="80" />
+                        </svg>
+                     </div>
+                     <h3 class="h3mini">Discussões</h3>
+                  </div>
 
-                </div>
-                <!--Mini end 1-->
+                  <div class="minisubcontainer">
+                     <img src="img/rank/separate.svg" style="margin-left: 20px;" />
+                     <div>
+                        <p class="number">
+                           <span class="num">10</span>
+                        </p>
+                        <p>Total de Discussões</p>
+                     </div>
+                  </div>
+               </div>
+               <!--Mini end 2-->
 
-                <!--Mini 2-->
-                <div class="minicontainer">
-                    <div class="minisubcontainer">
-                        <div class="blocktwo">
-                            <div class="boxtwo">
-                                <img src="img/rank/chat.svg">
-                            </div>
-                            <span class="dots"></span>
-                            <svg class="svg">
-                                <defs>
-                                    <linearGradient id="gradientStyle">
-                                        <stop offset="0%" stop-color="#3DCD58" />
-                                        <stop offset="100%" stop-color="#3DCD58" />
-                                    </linearGradient>
-                                </defs>
-                                <circle class="circle" cx="90" cy="90" r="80" />
-                            </svg>
+               <!--Mini 3-->
+               <div class="minicontainer">
+                  <div class="minisubcontainer">
+                     <div class="blocktwo">
+                        <div class="boxtwo">
+                           <img src="img/rank/chat.svg" />
                         </div>
-                        <h3 class="h3mini">Discussões</h3>
-                    </div>
+                        <span class="dots"></span>
+                        <svg class="svg">
+                           <defs>
+                              <linearGradient id="gradientStyle">
+                                 <stop offset="0%" stop-color="#3DCD58" />
+                                 <stop offset="100%" stop-color="#3DCD58" />
+                              </linearGradient>
+                           </defs>
+                           <circle class="circle" cx="90" cy="90" r="80" />
+                        </svg>
+                     </div>
+                     <h3 class="h3mini">Posts</h3>
+                  </div>
 
-                    <div class="minisubcontainer">
-                        <img src="img/rank/separate.svg" style="margin-left: 20px;">
-                        <div>
-                            <p class="number">
-                                <span class="num">10</span>
-                            </p>
-                            <p>Total de Discussões</p>
+                  <div class="minisubcontainer">
+                     <img src="img/rank/separate.svg" style="margin-left: 20px;" />
+                     <div>
+                        <p class="number">
+                           <span class="num">14</span>
+                        </p>
+                        <p>Total de Postagens</p>
+                     </div>
+                  </div>
+               </div>
+               <!--Mini end 3-->
+
+               <!--Mini 4-->
+               <div class="minicontainer">
+                  <div class="minisubcontainer">
+                     <div class="blocktwo">
+                        <div class="boxtwo">
+                           <img src="img/rank/win.svg" />
                         </div>
-                    </div>
+                        <span class="dots"></span>
+                        <svg class="svg">
+                           <defs>
+                              <linearGradient id="gradientStyle">
+                                 <stop offset="0%" stop-color="#3DCD58" />
+                                 <stop offset="100%" stop-color="#3DCD58" />
+                              </linearGradient>
+                           </defs>
+                           <circle class="circle" cx="90" cy="90" r="80" />
+                        </svg>
+                     </div>
+                     <h3 class="h3mini">Cursos</h3>
+                  </div>
 
-                </div>
-                <!--Mini end 2-->
-
-                <!--Mini 3-->
-                <div class="minicontainer">
-                    <div class="minisubcontainer">
-                        <div class="blocktwo">
-                            <div class="boxtwo">
-                                <img src="img/rank/chat.svg">
-                            </div>
-                            <span class="dots"></span>
-                            <svg class="svg">
-                                <defs>
-                                    <linearGradient id="gradientStyle">
-                                        <stop offset="0%" stop-color="#3DCD58" />
-                                        <stop offset="100%" stop-color="#3DCD58" />
-                                    </linearGradient>
-                                </defs>
-                                <circle class="circle" cx="90" cy="90" r="80" />
-                            </svg>
-                        </div>
-                        <h3 class="h3mini">Posts</h3>
-                    </div>
-
-                    <div class="minisubcontainer">
-                        <img src="img/rank/separate.svg" style="margin-left: 20px;">
-                        <div>
-                            <p class="number">
-                                <span class="num">14</span>
-                            </p>
-                            <p>Total de Postagens</p>
-                        </div>
-                    </div>
-
-                </div>
-                <!--Mini end 3-->
-
-                <!--Mini 4-->
-                <div class="minicontainer">
-                    <div class="minisubcontainer">
-                        <div class="blocktwo">
-                            <div class="boxtwo">
-                                <img src="img/rank/win.svg">
-                            </div>
-                            <span class="dots"></span>
-                            <svg class="svg">
-                                <defs>
-                                    <linearGradient id="gradientStyle">
-                                        <stop offset="0%" stop-color="#3DCD58" />
-                                        <stop offset="100%" stop-color="#3DCD58" />
-                                    </linearGradient>
-                                </defs>
-                                <circle class="circle" cx="90" cy="90" r="80" />
-                            </svg>
-                        </div>
-                        <h3 class="h3mini">Cursos</h3>
-                    </div>
-
-                    <div class="minisubcontainer">
-                        <img src="img/rank/separate.svg" style="margin-left: 20px;">
-                        <div>
-                            <p class="number">
-                                <span class="num">11</span>
-                            </p>
-                            <p>Total de Cursos Finalizados</p>
-                        </div>
-                    </div>
-
-                </div>
-                <!--Mini end 1-->
+                  <div class="minisubcontainer">
+                     <img src="img/rank/separate.svg" style="margin-left: 20px;" />
+                     <div>
+                        <p class="number">
+                           <span class="num">11</span>
+                        </p>
+                        <p>Total de Cursos Finalizados</p>
+                     </div>
+                  </div>
+               </div>
+               <!--Mini end 1-->
             </div>
-        </div>
-    </header>
-    <!--End Header-->
+         </div>
+      </header>
+      <!--End Header-->
 
-    <div class="leaderboard-container">
-
-        <div class="leaderboard-subcontainer">
+      <div class="leaderboard-container">
+         <div class="leaderboard-subcontainer">
             <h2 class="leaderboard-h2">Ranking Geral</h2>
 
             <div class="leaderboard-row">
-                <button class="leaderboard-button">
-                    <p>Pontuação Geral</p>
-                </button>
-                <button class="leaderboard-button-transparent">
-                    <p>Por desafio</p>
-                </button>
+               <button class="leaderboard-button">
+                  <p>Pontuação Geral</p>
+               </button>
+               <button class="leaderboard-button-transparent">
+                  <p>Por desafio</p>
+               </button>
             </div>
 
             <p>Pontuação</p>
@@ -313,210 +311,187 @@
 
             <!--Start TOP RANKING-->
             <div class="topranking-container">
+               <!-- TOP 1-->
+               <div class="top-container">
+                  <div class="top-subcontainer">
+                     <div class="top-organize">
+                        <p class="ptop">1</p>
+                        <img src="img/rank/r1.svg" class="top-img" />
+                        <p class="ptoprank">Joana Ramos</p>
+                     </div>
 
-                <!-- TOP 1-->
-                <div class="top-container">
-                    <div class="top-subcontainer">
+                     <p>5075</p>
+                  </div>
+               </div>
+               <!-- END TOP 1-->
 
-                        <div class="top-organize">
-                            <p class="ptop">1</p>
-                            <img src="img/rank/r1.svg" class="top-img">
-                            <p class="ptoprank">Joana Ramos</p>
-                        </div>
+               <!-- TOP 2-->
+               <div class="top-containertwo">
+                  <div class="top-subcontainer">
+                     <div class="top-organize">
+                        <p class="ptop">2</p>
+                        <img src="img/rank/r2.svg" class="top-img" />
+                        <p class="ptoprank">Emerson Almeida</p>
+                     </div>
 
-                        <p>5075</p>
-                    </div>
-                </div>
-                <!-- END TOP 1-->
+                     <p>5014</p>
+                  </div>
+                  <div class="top-line"></div>
+               </div>
+               <!-- END TOP 2-->
 
-                <!-- TOP 2-->
-                <div class="top-containertwo">
-                    <div class="top-subcontainer">
+               <!-- TOP 3-->
+               <div class="top-containertwo">
+                  <div class="top-subcontainer">
+                     <div class="top-organize">
+                        <p class="ptop">3</p>
+                        <img src="img/rank/r3.svg" class="top-img" />
+                        <p class="ptoprank">Bruna T. Donovan</p>
+                     </div>
 
-                        <div class="top-organize">
-                            <p class="ptop">2</p>
-                            <img src="img/rank/r2.svg" class="top-img">
-                            <p class="ptoprank">Emerson Almeida</p>
-                        </div>
+                     <p>4984</p>
+                  </div>
+                  <div class="top-line"></div>
+               </div>
+               <!-- END TOP 3-->
 
-                        <p>5014</p>
-                    </div>
-                    <div class="top-line"></div>
-                </div>
-                <!-- END TOP 2-->
+               <!-- TOP 4-->
+               <div class="top-containertwo">
+                  <div class="top-subcontainer">
+                     <div class="top-organize">
+                        <p class="ptop">4</p>
+                        <img src="img/rank/r4.svg" class="top-img" />
+                        <p class="ptoprank">Rafael L. Martins</p>
+                     </div>
 
-                <!-- TOP 3-->
-                <div class="top-containertwo">
-                    <div class="top-subcontainer">
+                     <p>4764</p>
+                  </div>
+                  <div class="top-line"></div>
+               </div>
+               <!-- END TOP 4-->
 
-                        <div class="top-organize">
-                            <p class="ptop">3</p>
-                            <img src="img/rank/r3.svg" class="top-img">
-                            <p class="ptoprank">Bruna T. Donovan</p>
-                        </div>
+               <!-- TOP 5-->
+               <div class="top-containertwo">
+                  <div class="top-subcontainer">
+                     <div class="top-organize">
+                        <p class="ptop">5</p>
+                        <img src="img/rank/r5.svg" class="top-img" />
+                        <p class="ptoprank">Mary R. Tavarez</p>
+                     </div>
 
-                        <p>4984</p>
-                    </div>
-                    <div class="top-line"></div>
-                </div>
-                <!-- END TOP 3-->
+                     <p>4701</p>
+                  </div>
+                  <div class="top-line"></div>
+               </div>
+               <!-- END TOP 5-->
 
-                <!-- TOP 4-->
-                <div class="top-containertwo">
-                    <div class="top-subcontainer">
+               <!-- TOP 6-->
+               <div class="top-containertwo">
+                  <div class="top-subcontainer">
+                     <div class="top-organize">
+                        <p class="ptop">6</p>
+                        <img src="img/rank/r6.svg" class="top-img" />
+                        <p class="ptoprank">Theresa N. Maki</p>
+                     </div>
 
-                        <div class="top-organize">
-                            <p class="ptop">4</p>
-                            <img src="img/rank/r4.svg" class="top-img">
-                            <p class="ptoprank">Rafael L. Martins</p>
-                        </div>
+                     <p>4545</p>
+                  </div>
+                  <div class="top-line"></div>
+               </div>
+               <!-- END TOP 6-->
 
-                        <p>4764</p>
-                    </div>
-                    <div class="top-line"></div>
-                </div>
-                <!-- END TOP 4-->
+               <!-- TOP 7-->
+               <div class="top-containertwo">
+                  <div class="top-subcontainer">
+                     <div class="top-organize">
+                        <p class="ptop">7</p>
+                        <img src="img/rank/r7.svg" class="top-img" />
+                        <p class="ptoprank">Luiz L. Souza</p>
+                     </div>
 
-                <!-- TOP 5-->
-                <div class="top-containertwo">
-                    <div class="top-subcontainer">
-
-                        <div class="top-organize">
-                            <p class="ptop">5</p>
-                            <img src="img/rank/r5.svg" class="top-img">
-                            <p class="ptoprank">Mary R. Tavarez</p>
-                        </div>
-
-                        <p>4701</p>
-                    </div>
-                    <div class="top-line"></div>
-                </div>
-                <!-- END TOP 5-->
-
-                <!-- TOP 6-->
-                <div class="top-containertwo">
-                    <div class="top-subcontainer">
-
-                        <div class="top-organize">
-                            <p class="ptop">6</p>
-                            <img src="img/rank/r6.svg" class="top-img">
-                            <p class="ptoprank">Theresa N. Maki</p>
-                        </div>
-
-                        <p>4545</p>
-                    </div>
-                    <div class="top-line"></div>
-                </div>
-                <!-- END TOP 6-->
-
-                <!-- TOP 7-->
-                <div class="top-containertwo">
-                    <div class="top-subcontainer">
-
-                        <div class="top-organize">
-                            <p class="ptop">7</p>
-                            <img src="img/rank/r7.svg" class="top-img">
-                            <p class="ptoprank">Luiz L. Souza</p>
-                        </div>
-
-                        <p>4366</p>
-                    </div>
-                    <div class="top-line"></div>
-                </div>
-                <!-- END TOP 7-->
-
+                     <p>4366</p>
+                  </div>
+                  <div class="top-line"></div>
+               </div>
+               <!-- END TOP 7-->
             </div>
             <!--End TOP RANKING-->
 
             <div class="reversedisplay">
-                <a href="rank.html" class="ptoprank2">Ver todos ></a>
+               <a href="rank.html" class="ptoprank2">Ver todos ></a>
             </div>
+         </div>
 
-        </div>
-
-        <div class="competitions-container">
-
+         <div class="competitions-container">
             <div class="competitions-subcontainer">
-                <h2 class="competitions-p">Competições</h2>
+               <h2 class="competitions-p">Competições</h2>
 
-                <div class="containerbuttoncarrousel">
-                    <div class="carousel__button--prev"></div>
-                    <div class="carousel__button--next"></div>
-                </div>
+               <div class="containerbuttoncarrousel">
+                  <div class="carousel__button--prev"></div>
+                  <div class="carousel__button--next"></div>
+               </div>
             </div>
 
             <div class="containeritenscarrousel">
-                <div class="carousel-wrapper">
-                    <div class="carousel">
+               <div class="carousel-wrapper">
+                  <div class="carousel">
+                     <div class="carousel__photo initial">
+                        <h2>Karaokê Showdown de Notas Altas</h2>
+                        <img src="img/rank/karaoke.svg" />
+                        <p class="competitions-p-carrousel">A competição mais aguardada está chegando! Solte a voz e celebre conosco nesta noite de pura diversão. Quem atingirá as notas mais altas e levará para casa o prêmio de ouro?</p>
+                     </div>
 
-                        <div class="carousel__photo initial">
-                            <h2>Karaokê Showdown de Notas Altas</h2>
-                            <img src="img/rank/karaoke.svg">
-                            <p class="competitions-p-carrousel">A competição mais aguardada está chegando! Solte a voz e
-                                celebre conosco nesta noite de pura diversão. Quem atingirá as notas mais altas e levará
-                                para casa o prêmio de ouro?</p>
-                        </div>
+                     <div class="carousel__photo">
+                        <h2>Torneio FIFA Copa dos Campeões</h2>
+                        <img src="img/rank/fifs.svg" />
+                        <p class="competitions-p-carrousel">
+                           Preparados para um duelo de habilidades virtuais? Junte-se a nós na Copa dos Campeões, uma competição eletrizante de FIFA que irá testar suas habilidades de jogo e estratégia. Quem vai conquistar a glória virtual
+                           e se tornar o verdadeiro campeão? Entre no campo virtual e mostre ao mundo o que você é capaz!
+                        </p>
+                     </div>
 
-                        <div class="carousel__photo">
-                            <h2>Torneio FIFA Copa dos Campeões</h2>
-                            <img src="img/rank/fifs.svg">
-                            <p class="competitions-p-carrousel">Preparados para um duelo de habilidades virtuais?
-                                Junte-se a nós na Copa dos Campeões, uma competição eletrizante de FIFA que irá testar
-                                suas habilidades de jogo e estratégia. Quem vai conquistar a glória virtual e se tornar
-                                o verdadeiro campeão? Entre no campo virtual e mostre ao mundo o que você é capaz!</p>
-                        </div>
+                     <div class="carousel__photo">
+                        <h2>Jogos no Ápice: Campeonato de Jogos de Tabuleiro</h2>
+                        <img src="img/rank/tabuleiro.svg" />
+                        <p class="competitions-p-carrousel">Pegue seus dados e cartas, é hora de competir! Junte-se a nós nesta noite de diversão com jogos de tabuleiro. Quem será o grande mestre dos jogos?</p>
+                     </div>
 
-                        <div class="carousel__photo">
-                            <h2>Jogos no Ápice: Campeonato de Jogos de Tabuleiro</h2>
-                            <img src="img/rank/tabuleiro.svg">
-                            <p class="competitions-p-carrousel">Pegue seus dados e cartas, é hora de competir! Junte-se
-                                a nós nesta noite de diversão com jogos de tabuleiro. Quem será o grande mestre dos
-                                jogos?</p>
-                        </div>
+                     <div class="carousel__photo">
+                        <h2>Trívia Showdown: Teste seus Conhecimentos</h2>
+                        <img src="img/rank/game.svg" />
+                        <p class="competitions-p-carrousel">Mostre que você é um verdadeiro mestre da trívia! Uma noite de competição de perguntas e respostas. Quem será o campeão do conhecimento?</p>
+                     </div>
 
-                        <div class="carousel__photo">
-                            <h2>Trívia Showdown: Teste seus Conhecimentos</h2>
-                            <img src="img/rank/game.svg">
-                            <p class="competitions-p-carrousel">Mostre que você é um verdadeiro mestre da trívia! Uma
-                                noite de competição de perguntas e respostas. Quem será o campeão do conhecimento?</p>
-                        </div>
+                     <div class="carousel__photo">
+                        <h2>Desafio Culinário: Chef por uma Noite</h2>
+                        <img src="img/rank/food.svg" />
+                        <p class="competitions-p-carrousel">Coloque seu avental e prepare-se para cozinhar! Uma competição culinária repleta de sabor. Quem será coroado o chef por uma noite?</p>
+                     </div>
+                  </div>
+               </div>
 
-                        <div class="carousel__photo">
-                            <h2>Desafio Culinário: Chef por uma Noite</h2>
-                            <img src="img/rank/food.svg">
-                            <p class="competitions-p-carrousel">Coloque seu avental e prepare-se para cozinhar! Uma
-                                competição culinária repleta de sabor. Quem será coroado o chef por uma noite?</p>
-                        </div>
+               <div class="competitions-container-info">
+                  <div class="competitions-subcontainer">
+                     <img src="img/rank/persons.svg" />
+                     <p class="persons-p">59 já toparam esse desafio</p>
+                  </div>
 
-                    </div>
-                </div>
+                  <button class="competitions-button">
+                     <p class="">Se Inscrever</p>
+                  </button>
 
-                <div class="competitions-container-info">
-
-                    <div class="competitions-subcontainer">
-                        <img src="img/rank/persons.svg">
-                        <p class="persons-p">59 já toparam esse desafio</p>
-                    </div>
-
-                    <button class="competitions-button">
-                        <p class="">Se Inscrever</p>
-                    </button>
-
-                    <a href="rank.html" class="rank-a">Saber mais ></a>
-                </div>
-
+                  <a href="rank.html" class="rank-a">Saber mais ></a>
+               </div>
             </div>
-        </div>
+         </div>
+      </div>
+      <footer class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5">
+         <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider" />
 
-    </div>
-    <footer class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5">
-        <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider">
-
-        <hr class="divider">
-        <p>© 2023 MySchneider | All Rights Reserved</p>
-    </footer>
-    <script src="js/drawer.js"></script>
-    <script src="js/rank.js"></script>
-</body>
-
+         <hr class="divider" />
+         <p>© 2023 MySchneider | All Rights Reserved</p>
+      </footer>
+      <script src="js/drawer.js"></script>
+      <script src="js/rank.js"></script>
+   </body>
 </html>

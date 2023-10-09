@@ -1,211 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/instituto.css" />
-    <link rel="stylesheet" href="css/shared-items.css" />
-    <link rel="stylesheet" href="css/drawer.css" />
-    <link rel="stylesheet" href="css/responsive.css">
-    <title>Perfil</title>
-    <link rel="icon" type="image/png" href="img/schneider_logo.png" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
-  </head>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/instituto.css" />
+      <link rel="stylesheet" href="css/shared-items.css" />
+      <link rel="stylesheet" href="css/drawer.css" />
+      <script src="js/instituto.js"></script>
+      <title>Perfil</title>
+      <link rel="icon" type="image/png" href="img/schneider_logo.png" />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&family=Varela+Round&display=swap" rel="stylesheet" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-  <body style="width: 100%">
-    <!----------------------------------------------- nav bar --------------------------------------------------------------->
-    <nav class="remove">
-      <div class="d-flex justify-content-evenly">
-        <img src="img/schneider-logo.svg" alt="logo da schneider" />
+   </head>
 
-        <div class="d-flex align-items-center">
-          <input
-            type="text"
-            class="form-control bg-light"
-            placeholder="Pesquise por pessoas, desafios, assuntos & outros"
-            aria-label="Example text with button addon"
-            aria-describedby="button-addon1"
-            style="width: 30vw"
-          />
-          <button
-            class="btn btn-secondary btn-outline"
-            type="button"
-            id="button-addon1"
-          >
-            <img src="img/search-button-icon.svg" alt="pesquisar" />
-          </button>
-        </div>
-        <div class="d-flex align-items-center gap-5">
-          <img src="img/message-icon.svg" alt="messagens" />
-          <img src="img/notification-icon.svg" alt="notificações" />
-        </div>
-        <div class="d-flex align-items-center">
-          <img src="img/joana-photo.svg" alt="foto de perfil" />
-          <p class="pt-3">Joana Ramos</p>
-          <a
-            class="icons mx-2"
-            href="login.html"
-            style="width: 25px; height: 20px"
-          >
-            <img
-              class="img-fluid"
-              src="img/share-icon.svg"
-              alt="compartilhar postagem"
-            />
+   <body style="width: 100%;">
+      <!----------------------------------------------- nav bar --------------------------------------------------------------->
+      <nav class="remove">
+         <div class="d-flex justify-content-evenly">
+            <img src="img/schneider-logo.svg" alt="logo da schneider" />
+
+            <div class="d-flex align-items-center">
+               <input type="text" class="form-control bg-light" placeholder="Pesquise por pessoas, desafios, assuntos & outros" aria-label="Example text with button addon" aria-describedby="button-addon1" style="width: 30vw;" />
+               <button class="btn btn-secondary btn-outline" type="button" id="button-addon1">
+                  <img src="img/search-button-icon.svg" alt="pesquisar" />
+               </button>
+            </div>
+            <div class="d-flex align-items-center gap-5">
+               <img src="img/message-icon.svg" alt="messagens" />
+               <img src="img/notification-icon.svg" alt="notificações" />
+            </div>
+            <div class="d-flex align-items-center">
+               <img src="img/joana-photo.svg" alt="foto de perfil" />
+               <p class="pt-3">Joana Ramos</p>
+               <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px;">
+                  <img class="img-fluid" src="img/open-new-window-2.png" style="width: 15px; height: 15px;" alt="compartilhar postagem" />
+               </a>
+            </div>
+         </div>
+         <ul class="nav-bar-items">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="forum.html">Fórum</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="rank.html">Epower</a></li>
+            <li><a href="index.html">Sobre o Projeto</a></li>
+            <li class="active"><a href="instituto.html">Fundação</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+         </ul>
+      </nav>
+      <!----------------------------------------------- nav bar --------------------------------------------------------------->
+
+      <!-------------------------------Drawer Responsive----------------------------------------->
+      <nav class="navbar-mobile bg-light">
+         <nav class="navbar navbar-expand-lg bg-light fixed-top d-lg-none">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
+               <div class="navbar-menu-img">
+                  <img src="img/navbar-menu2.svg" style="width: 20px;" alt="navbar menu" />
+               </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMenu">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="inicio.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="forum.html">Forum</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="perfil.html">Perfil</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="rank.html">Epower</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="index.html">Sobre o Projeto</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="instituto.html">Fundação</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="faq.html">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="login.html">Logout</a>
+                  </li>
+               </ul>
+            </div>
+
+            <a class="navbar-brand text-white d-flex align-items-center" href="#!">
+               <div class="imagem-joana">
+                  <div class="super-container-drawer">
+                     <img src="img/joana-photo.svg" />
+                  </div>
+               </div>
+               <span class="nome-joana text-black">Joana Ramos</span>
+            </a>
+         </nav>
+      </nav>
+
+      <!-----------------------------END Drawer Responsive----------------------------------------->
+
+      <main class="bg-light">
+         <div class="instituto-banner d-flex align-items-center justify-content-center text-center">
+            <h1 class="text-white fw-bolder fw-schneider">Fundação Schneider Eletric</h1>
+         </div>
+
+         <div class="d-flex flex-column align-items-center justify-content-center py-5 gap-5">
+            <div class="col-md-6">
+               <p class="fs-2">Apoiamos indivíduos e comunidades em todo o mundo com <span class="destaque">educação</span> e <span class="destaque">formação</span>, por meio de nossa rede ativa de voluntariado e parceiros locais</p>
+            </div>
+         </div>
+         <div class="compromisso-banner d-flex flex-column align-items-center px-3 px-sm-5 text-center">
+            <h1 class="text-white fw-bolder" style="width: 100%;">
+               Compromissos da<br />
+               Fundação para 2025
+            </h1>
+            <div class="mt-4">
+               <div class="row">
+                  <div class="col-sm-6">
+                     <span>
+                        <p class="fw-bolder text-schneider-color fs-2">1 milhão</p>
+                        <p class="text-white fs-5">indivíduos treinados em energia</p>
+                     </span>
+                  </div>
+                  <div class="col-sm-6">
+                     <span>
+                        <p class="fw-bolder text-schneider-color fs-2">50.000</p>
+                        <p class="text-white fs-5">Dias de voluntariado em todo o mundo</p>
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="p-4"></div>
+         <div class="d-flex flex-column align-items-center text-center gap-5">
+            <div class="conheca-text">
+               Conheça os Programas da Fundação
+            </div>
+
+            <div class="col-md-6 d-flex flex-column align-items-center justify-content-center gap-5 mb-5">
+               <div class="conheca-subtext">
+                  Junte-se a nós em uma jornada de <strong class="strong-text-conheca">impacto e solidariedade</strong>. <br>Sua contribuição é fundamental para tornar nossos programas de voluntariado um sucesso no Brasil. Seja parte dessa equipe dedicada que faz a diferença na vida de
+                  muitos. Cada gesto de ajuda conta e é valorizado pela Schneider Eletric. Conheça um pouco mais das nossas oportunidades abaixo e ajude como pode. <br><strong class="strong-text-conheca">Vamos juntos fazer o bem e transformar vidas!</strong>
+               </div>
+            </div>
+         </div>
+
+         <!--<div class="d-flex flex-column align-items-center text-center">
+        <button type="button" class="bg-schneider-color px-5 py-3 shadow fw-bolder mb-2" style="border: none;">
+          Programa VolunteerIn
+        </button>
+      
+        <button type="button" class="bg-schneider-color_white px-5 py-3 shadow fw-bolder mb-2" style="border: none;">
+          Treinamento e Empreendedorismo
+        </button>
+      
+        <button type="button" class="bg-schneider-color_white px-5 py-3 shadow fw-bolder mb-2" style="border: none;">
+          Tomorrow Rising
+        </button>
+      
+        <button type="button" class="bg-schneider-color_white px-5 py-3 shadow fw-bolder mb-2" style="border: none;">
+          ver mais
+        </button>
+      </div> -->
+
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+           <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+           <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+           <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+           <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+        </ol>
+
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <!-- Imagem para Web (largura máxima: 100% da largura da tela, altura máxima: 60vh) -->
+                  <img src="img/banner-fundacao-2-web.png" class="d-none d-md-block w-100 image-fit-web" alt="Imagem 1 Web" />
+
+                  <!-- Imagem para Mobile (largura máxima: 100% da largura da tela, altura máxima: 30vh) -->
+                  <img src="img/banner-fundacao-2.png" class="d-block d-md-none w-100 image-fit-mobile" alt="Imagem 1 Mobile" />
+               </div>
+               <div class="carousel-item">
+                  <!-- Imagem para Web (largura máxima: 100% da largura da tela, altura máxima: 60vh) -->
+                  <img src="img/banner-fundacao-3-web.png" class="d-none d-md-block w-100 image-fit-web" alt="Imagem 1 Web" />
+
+                  <!-- Imagem para Mobile (largura máxima: 100% da largura da tela, altura máxima: 30vh) -->
+                  <img src="img/banner-fundacao-3.png" class="d-block d-md-none w-100 image-fit-mobile" alt="Imagem 1 Mobile" />
+               </div>
+               <div class="carousel-item">
+                  <!-- Imagem para Web (largura máxima: 100% da largura da tela, altura máxima: 60vh) -->
+                  <img src="img/banner-fundacao-1-web.png" class="d-none d-md-block w-100 image-fit-web" alt="Imagem 1 Web" />
+
+                  <!-- Imagem para Mobile (largura máxima: 100% da largura da tela, altura máxima: 30vh) -->
+                  <img src="img/banner-fundacao-1.png" class="d-block d-md-none w-100 image-fit-mobile" alt="Imagem 1 Mobile" />
+               </div>
+
+               <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+               </a>
+               <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+               </a>
+            </div>
+
+            <div class="mt-3 text-center">
+               <a href="https://www.se.com/br/pt/about-us/sustainability/foundation/" class="btn shadow" style="background-color: transparent; border-color: #3dcd58; color: #3dcd58;">Doar Agora</a>
+               <a href="https://www.se.com/br/pt/about-us/sustainability/foundation/" class="btn shadow" style="background-color: #42b4e6; border-color: #3dcd58; color: #ffffff;">Ser Voluntário</a>
+            </div>
+            <div>
+               <div class="amigos-apoiando d-flex justify-content-center align-items-center">
+                  <div id="organizeimg" class="d-flex align-items-center">
+                     <div class="mt-3 text-center">
+                        <img src="img/profile/friends.svg" />
+                        <p id="pmain">59 amigos estão apoiando essa ação</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!--BODY
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="carousel-container shadow">
+        <div id="carouselExample" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/banner-fundacao-2.png" class="d-block w-100" alt="Imagem 1">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner-fundacao-1.png" class="d-block w-100" alt="Imagem 2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner-fundacao-3.png" class="d-block w-100" alt="Imagem 3">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner-fundacao-1.png" class="d-block w-100" alt="Imagem 4">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
           </a>
         </div>
       </div>
-      <ul class="nav-bar-items">
-        <li><a href="inicio.html">Inicio</a></li>
-        <li><a href="forum.html">Fórum</a></li>
-        <li><a href="perfil.html">Perfil</a></li>
-        <li><a href="rank.html">Empoyer</a></li>
-        <li class="active"><a href="instituto.html">Fundação</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-      </ul>
-    </nav>
-    <!----------------------------------------------- nav bar --------------------------------------------------------------->
-    <!--Drawer Responsive-->
-    <div id="burger">
-      <img src="img/hamburger.svg">
+    </div>
   </div>
-  <div id="nav">
+</div> -->
 
-      <div style="display: flex; flex-direction: column;">
-          <div class="super-container-drawer">
-              <img src="img/joana-photo.svg">
-              <div class="container-drawer-profile">
-                  <h3 class="h3profile">Joana Ramos</h3>
-                  <p class="pprofile">Estagiaria de RH</p>
-              </div>
-          </div>
-
-          <ul class="uldrawer">
-              <li class="lidrawer">
-                  <a class="a-drawer" href="index.html">Inicio</a>
-              </li>
-              <li class="lidrawer">
-                  <a class="a-drawer" href="forum.html">Forum</a>
-              </li>
-              <li class="lidrawer">
-                  <a class="a-drawer" href="perfil.html">Perfil</a>
-              </li>
-              <li class="lidrawer">
-                  <a class="a-drawer" href="rank.html">Empoyer</a>
-              </li>
-              <li class="lidrawer">
-                  <a class="a-drawer active" href="instituto.html">Fundação</a>
-              </li>
-              <li class="lidrawer">
-                  <a class="a-drawer" href="faq.html">FAQ</a>
-              </li>
-              <li class="lidrawer">
-                  <a class="a-drawer" href="login.html">Logout</a>
-              </li>
-
-          </ul>
-      </div>
-  </div>
-  </div>
-  <!--Drawer Responsive-->
-    <main class="bg-light">
-      <div
-        class="instituto-banner d-flex align-items-center justify-content-center"
-      >
-        <h1 class="text-white">Fundação Schneider Eletric</h1>
-      </div>
-
-      <div
-        class="d-flex flex-column align-items-center justify-content-center py-5 gap-5"
-      >
-        <button
-          type="button"
-          class="bg-schneider-color px-5 py-3 shadow fw-bolder"
-          style="border: none"
-        >
-          Fundação Schneider Eletric
-        </button>
-        <div class="d-flex align-items-center gap-4 px-3">
-          <img src="img/instituto/lgbt-img.svg" alt="imagem bandeia lgbt" />
-          <p class="fs-2">
-            Apoiamos indivíduos e comunidades em todo o mundo com educação e
-            formação, por meio de nossa rede ativa de voluntariado e parceiros
-            locais
-          </p>
-        </div>
-      </div>
-      <div
-        class="compromisso-banner d-flex align-items-center justify-content-between px-5"
-      >
-        <h1 class="text-white fw-bolder" style="width: 30%">
-          Compromissos da Fundação para 2025
-        </h1>
-        <div>
-          <span>
-            <p class="fw-bolder text-schneider-color fs-4">1 milhão</p>
-            <p class="text-white fs-5">indivíduos treinados em energia</p>
-          </span>
-          <span>
-            <p class="fw-bolder text-schneider-color fs-4">50.000</p>
-            <p class="text-white fs-5">Dias de voluntariado em todo o mundo</p>
-          </span>
-        </div>
-      </div>
-
-      <div
-        class="d-flex flex-column align-items-center justify-content-center mt-5 gap-5"
-      >
-        <h1>Faça parte e deixe a sua pegada no mundo</h1>
-
-        <div
-          class="d-flex align-items-center flex-column justify-content-center gap-3"
-        >
-          <img src="img/instituto/voluntario.svg" alt="" />
-          <p style="width: 70%" class="fs-5 fw-bolder">
-            Criado em 2012, nosso programa VolunteerIn inspira as pessoas a
-            darem retorno às comunidades, por meio de orientação, treinamento e
-            contribuição para iniciativas significativas dos parceiros locais.
-            Ao apoiá-los, amplificamos o poder da cidadania responsável e do
-            desenvolvimento sustentável.
-          </p>
-        </div>
-
-        <div
-          class="d-flex align-items-center flex-column justify-content-center gap-3"
-        >
-          <img src="img/instituto/escola.svg" alt="" />
-          <p style="width: 70%" class="fs-5 fw-bolder">
-            Treinamento profissional e empreendedorismo é um fator determinante
-            no desenvolvimento socioeconômico e sustentável. Ao oferecermos
-            nossa experiência, trabalho voluntário e apoiarmos e colaborarmos
-            com as parcerias locais, capacitamos indivíduos e comunidades para
-            um futuro melhor.
-          </p>
-        </div>
-      </div>
-    </main>
-
-    <!--Footer-->
-    <footer
-      class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5"
-    >
-      <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider" />
-
-      <hr class="divider" />
-      <p>© 2023 MySchneider | All Rights Reserved</p>
-    </footer>
-    <!--End Footer-->
-    <script src="js/drawer.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
-    <script src="js/instituto.js"></script>
-  </body>
+               <!-- Footer -->
+               <footer class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5 footer shadow">
+                  <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider" />
+                  <hr class="divider" />
+                  <p>© 2023 MySchneider | All Rights Reserved</p>
+               </footer>
+               <!-- End Footer -->
+            </div>
+         </div>
+      </main>
+   </body>
 </html>
