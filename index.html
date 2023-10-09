@@ -1,298 +1,195 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/rank.css" />
+      <link rel="stylesheet" href="css/inicio.css" />
+      <link rel="stylesheet" href="css/shared-items.css" />
+      <link rel="stylesheet" href="css/sobre-nos.css" />
+      <link rel="stylesheet" href="css/drawer.css" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&family=Roboto:wght@400;700&family=Varela+Round&display=swap" rel="stylesheet" />
+      <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png" />
+      <title>Sobre o Projeto</title>
+   </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="icon" type="image/x-icon" href="img/SchneiderLogo.png" />
-  <link rel="stylesheet" href="css/rank.css" />
-  <link rel="stylesheet" href="css/inicio.css" />
-  <link rel="stylesheet" href="css/shared-items.css" />
-  <link rel="stylesheet" href="css/drawer.css" />
-  <link rel="stylesheet" href="css/responsive.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
-  <title>My Schneider</title>
-</head>
+   <body class="bg-light">
+      <!----------------------------------------------- nav bar --------------------------------------------------------------->
+      <nav class="remove">
+         <div class="d-flex justify-content-evenly">
+            <img src="img/schneider-logo.svg" alt="logo da schneider" />
 
-<body class="bg-light" style="width: 100%">
-  <!----------------------------------------------- nav bar --------------------------------------------------------------->
-  <nav class="remove">
-    <div class="d-flex justify-content-evenly">
-      <img src="img/schneider-logo.svg" alt="logo da schneider" />
-
-      <div class="d-flex align-items-center">
-        <input type="text" class="form-control bg-light" placeholder="Pesquise por pessoas, desafios, assuntos & outros"
-          aria-label="Example text with button addon" aria-describedby="button-addon1" style="width: 30vw" />
-        <button class="btn btn-secondary btn-outline" type="button" id="button-addon1">
-          <img src="img/search-button-icon.svg" alt="pesquisar" />
-        </button>
-      </div>
-      <div class="d-flex align-items-center gap-5">
-        <img src="img/message-icon.svg" alt="messagens" />
-        <img src="img/notification-icon.svg" alt="notificações" />
-      </div>
-      <div class="d-flex align-items-center">
-        <img src="img/joana-photo.svg" alt="foto de perfil" />
-        <p class="pt-3">Joana Ramos</p>
-        <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px">
-          <img class="img-fluid" src="img/share-icon.svg" alt="compartilhar postagem" />
-        </a>
-      </div>
-    </div>
-    <ul class="nav-bar-items">
-      <li class="active"><a href="inicio.html">Inicio</a></li>
-      <li><a href="forum.html">Fórum</a></li>
-      <li><a href="perfil.html">Perfil</a></li>
-      <li><a href="rank.html">Empoyer</a></li>
-      <li><a href="instituto.html">Fundação</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-    </ul>
-  </nav>
-  <!----------------------------------------------- nav bar --------------------------------------------------------------->
-  <!--Drawer Responsive-->
-  <div id="burger">
-    <img src="img/hamburger.svg">
-</div>
-  <div id="nav">
-
-    <div style="display: flex; flex-direction: column;">
-      <div class="super-container-drawer">
-        <img src="img/joana-photo.svg">
-        <div class="container-drawer-profile">
-          <h3 class="h3profile">Joana Ramos</h3>
-          <p class="pprofile">Estagiaria de RH</p>
-        </div>
-      </div>
-
-      <ul class="uldrawer">
-        <li class="lidrawer">
-          <a class="a-drawer active" href="index.html">Inicio</a>
-        </li>
-        <li class="lidrawer">
-          <a class="a-drawer" href="forum.html">Forum</a>
-        </li>
-        <li class="lidrawer">
-          <a class="a-drawer" href="perfil.html">Perfil</a>
-        </li>
-        <li class="lidrawer">
-          <a class="a-drawer" href="rank.html">Empoyer</a>
-        </li>
-        <li class="lidrawer">
-          <a class="a-drawer" href="instituto.html">Fundação</a>
-        </li>
-        <li class="lidrawer">
-          <a class="a-drawer" href="faq.html">FAQ</a>
-        </li>
-        <li class="lidrawer">
-          <a class="a-drawer" href="login.html">Logout</a>
-        </li>
-
-      </ul>
-    </div>
-  </div>
-  </div>
-  <!--Drawer Responsive-->
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
-      <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
-    </ol>
-
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/banner-1.png" class="d-block w-100 image-fit" alt="Imagem 1" />
-      </div>
-      <div class="carousel-item">
-        <img src="img/banner-2.png" class="d-block w-100 image-fit" alt="Imagem 2" />
-      </div>
-      <div class="carousel-item">
-        <img src="img/banner-3.png" class="d-block w-100 image-fit" alt="Imagem 3" />
-      </div>
-    </div>
-
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Próximo</span>
-    </a>
-  </div>
-
-  <div class="d-flex flex-column gap-2 align-items-center mt-5">
-    <div class="d-flex justify-content-center align-items-center gap-2">
-      <span class="bg-light-gray py-2 px-3 rounded options-category"
-        onclick="alert('WIP: WORK IN PROGRESS')">Dicas</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category"
-        onclick="alert('WIP: WORK IN PROGRESS')">Compostagem</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">IoT</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Mobilidade
-        elétrica</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category"
-        onclick="alert('WIP: WORK IN PROGRESS')">Inteligência Artificial</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category"
-        onclick="alert('WIP: WORK IN PROGRESS')">Tecnologias verdes</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Cidades
-        Inteligentes</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Energia
-        eólica</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category"
-        onclick="alert('WIP: WORK IN PROGRESS')">Mobilidade</span>
-    </div>
-
-    <div class="d-flex justify-content-center align-items-center gap-2">
-      <span class="bg-light-gray py-2 px-3 rounded options-category" onclick="alert('WIP: WORK IN PROGRESS')">Energias
-        renováveis</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category"
-        onclick="alert('WIP: WORK IN PROGRESS')">Sustentabilidade</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category"
-        onclick="alert('WIP: WORK IN PROGRESS')">Agricultura Sustentável</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category"
-        onclick="alert('WIP: WORK IN PROGRESS')">Lixo</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category"
-        onclick="alert('WIP: WORK IN PROGRESS')">Reutilização</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category"
-        onclick="alert('WIP: WORK IN PROGRESS')">Fauna&Flora</span>
-      <span class="bg-light-gray py-2 px-3 rounded options-category"
-        onclick="alert('WIP: WORK IN PROGRESS')">Receitas</span>
-      <span class="py-2 px-3 rounded options-category" style="background-color: #3dcd58">Ver Tudo</span>
-    </div>
-
-    <hr class="divider" style="width: 80%" />
-  </div>
-
-  <div class="toast align-items-center text-white border-0"
-    style="background-color: #3dcd58; position: fixed; top: 1rem; left: 20px" role="alert" aria-live="assertive"
-    aria-atomic="true">
-    <div class="d-flex">
-      <div class="toast-body">
-        Parabéns pela postagem, você ganhou 50 pontos de experiência
-      </div>
-      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"
-        aria-label="Close"></button>
-    </div>
-  </div>
-
-  <main>
-    <div class="container">
-      <div class="row">
-        <div class="col d-flex flex-column gap-3">
-          <div class="bg-white d-flex flex-column justify-content-center align-items-center py-3 border rounded">
-            <p class="h4">Joana Ramos</p>
-            <p class="h6 text-secondary">Estagiária de RH</p>
-            <hr style="width: 80%; height: 2px" class="text-color-green-xp" />
-            <p class="text-color-green-xp" id="pontos-adquiridos"></p>
-          </div>
-          <div class="bg-white px-4 py-2 border rounded">
-            <span>
-              <small><a href="" class="text-secondary">Histórico de perguntas</a></small>
-              <small onclick="alert('WIP: WORK IN PROGRESS')"><a href="" class="text-secondary">Convidar
-                  Colegas</a></small>
-              <small onclick="alert('WIP: WORK IN PROGRESS')"><a href="" class="text-secondary">Fórum</a></small>
-              <small onclick="alert('WIP: WORK IN PROGRESS')"><a href="" class="text-secondary">FAQ</a></small>
-            </span>
-            <span>
-              <small onclick="alert('WIP: WORK IN PROGRESS')">
-                <a href="" class="text-secondary">Métricas</a></small>
-              <small onclick="alert('WIP: WORK IN PROGRESS')">
-                <a href="" class="text-secondary">Ranking</a></small>
-              <small onclick="alert('WIP: WORK IN PROGRESS')">
-                <a href="" class="text-secondary">Perfil</a></small>
-              <small onclick="alert('WIP: WORK IN PROGRESS')">
-                <a href="" class="text-secondary">Editar</a></small>
-            </span>
-          </div>
-        </div>
-        <div class="col-6 d-flex flex-column gap-3" id="publish-container">
-          <div class="d-flex bg-white border px-3 py-4 gap-3 rounded">
-            <img src="/img/joana-photo.svg" alt="foto de perfil" />
-            <div class="d-flex flex-column w-100">
-              <textarea id="owner-publish" class="text-area" placeholder="Escrever um post"></textarea>
-              <div class="invalid-feedback">
-                Por favor, preencha este campo.
-              </div>
+            <div class="d-flex align-items-center">
+               <input type="text" class="form-control bg-light" placeholder="Pesquise por pessoas, desafios, assuntos & outros" aria-label="Example text with button addon" aria-describedby="button-addon1" style="width: 30vw;" />
+               <button class="btn btn-secondary btn-outline" type="button" id="button-addon1">
+                  <img src="img/search-button-icon.svg" alt="pesquisar" />
+               </button>
             </div>
-            <img src="img/image-icon.svg" class="anex-image" alt="anexar imagem"
-              onclick="alert('WIP: WORK IN PROGRESS')" />
-            <img src="img/submit-icon.svg" class="submit-image" alt="publicar postagem" onclick="addOwnerPublish()" />
-          </div>
-
-          <div id="new-publish" class="gap-3 d-flex flex-column"></div>
-
-          <div class="bg-white p-4 border">
-            <div class="d-flex flex-column gap-2">
-              <div class="d-flex justify-content-between">
-                <span class="d-flex align-items-center gap-4">
-                  <img src="img/andre-photo.svg" alt="foto de perfil" />
-                  <span class="d-flex flex-column">
-                    <p style="margin-bottom: -0.1rem">André Nogueira</p>
-                    <small class="text-secondary">
-                      Analista de qualidade</small>
-                  </span>
-                </span>
-
-                <p class="text-primary text-end fs-6">
-                  <img src="img/check-arrow.svg" alt="seta de seguindo perfil" />
-                  Seguindo
-                </p>
-              </div>
-
-              <div>
-                <p>
-                  As abelhas são essenciais para o mundo! 🐝 Sua polinização
-                  garante a reprodução de plantas e a diversidade alimentar.
-                  Sem elas, a biodiversidade seria ameaçada, afetando
-                  ecossistemas e agricultura. Vamos proteger e valorizar essas
-                  incríveis guardiãs da natureza! 🌍💚 #SaveTheBees
-                  #Polinização #Biodiversidade #PreservaçãoAmbiental
-                </p>
-                <img src="https://source.unsplash.com/random/300%C3%97309/?bee" class="img-fluid" alt="random image" />
-              </div>
-
-              <hr class="divider" />
-              <div class="ms-2 d-flex gap-5">
-                <div class="icons me-1" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
-                  <img class="img-fluid" src="img/like-icon.svg" alt="curtir postagem" />
-                  <small>Gostei</small>
-                </div>
-                <div class="icons me-2" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
-                  <img class="img-fluid" src="img/comment-icon.svg" alt="comentar na postagem" />
-                  <small>Comentar</small>
-                </div>
-                <div class="icons mx-2" role="button" onclick="alert('WIP: WORK IN PROGRESS')">
-                  <img class="img-fluid" src="img/share-icon.svg" alt="compartilhar postagem" />
-                  <small>Compartilhar</small>
-                </div>
-              </div>
+            <div class="d-flex align-items-center gap-5">
+               <img src="img/message-icon.svg" alt="messagens" />
+               <img src="img/notification-icon.svg" alt="notificações" />
             </div>
-          </div>
-        </div>
-        <div class="col d-flex flex-column align-items-center gap-3">
-          <p>Destaques</p>
-          <img src="https://source.unsplash.com/random/300%C3%97300/?nature" class="img-fluid rounded"
-            alt="random image" role="button" onclick="alert('WIP: WORK IN PROGRESS')" title="Postagem em destaque" />
-          <img src="https://source.unsplash.com/random/300%C3%97301/?nature" class="img-fluid rounded"
-            alt="random image" role="button" onclick="alert('WIP: WORK IN PROGRESS')" title="Postagem em destaque" />
-          <img src="https://source.unsplash.com/random/300%C3%97302/?nature" class="img-fluid rounded"
-            alt="random image" role="button" onclick="alert('WIP: WORK IN PROGRESS')" title="Postagem em destaque" />
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5">
-    <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider" />
+            <div class="d-flex align-items-center">
+               <img src="img/joana-photo.svg" alt="foto de perfil" />
+               <p class="pt-3">Joana Ramos</p>
+               <a class="icons mx-2" href="login.html" style="width: 25px; height: 20px;">
+                  <img class="img-fluid" src="img/open-new-window-2.png" style="width: 15px; height: 15px;" alt="compartilhar postagem" />
+               </a>
+            </div>
+         </div>
+         <ul class="nav-bar-items">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="forum.html">Fórum</a></li>
+            <li><a href="perfil.html">Perfil</a></li>
+            <li><a href="rank.html">Epower</a></li>
+            <li class="active"><a href="index.html">Sobre o Projeto</a></li>
+            <li><a href="instituto.html">Fundação</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+         </ul>
+      </nav>
+      <!----------------------------------------------- nav bar --------------------------------------------------------------->
+       <!-------------------------------Drawer Responsive----------------------------------------->
+       <nav class="navbar-mobile bg-light">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top d-lg-none">
+           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation" style="border: none; outline: none;">
+              <div class="navbar-menu-img">
+                 <img src="img/navbar-menu2.svg" style="width: 20px;" alt="navbar menu" />
+              </div>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav ml-auto">
+                 <li class="nav-item">
+                    <a class="nav-link" href="inicio.html">Inicio</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="forum.html">Forum</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="perfil.html">Perfil</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="rank.html">Epower</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="index.html">Sobre o Projeto</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="instituto.html">Fundação</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                 </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="login.html">Logout</a>
+                 </li>
+              </ul>
+           </div>
 
-    <hr class="divider" />
-    <p>© 2023 MySchneider | All Rights Reserved</p>
-  </footer>
-  <script src="js/drawer.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.min.js"></script>
-  <script src="js/inicio.js"></script>
-</body>
+           <a class="navbar-brand text-white d-flex align-items-center" href="#!">
+              <div class="imagem-joana">
+                 <div class="super-container-drawer">
+                    <img src="img/joana-photo.svg" />
+                 </div>
+              </div>
+              <span class="nome-joana text-black">Joana Ramos</span>
+           </a>
+        </nav>
+     </nav>
 
+     <!-----------------------------END Drawer Responsive----------------------------------------->
+     
+      <main class="d-flex flex-column gap-5 justify-content-center align-items-center">
+         <div class="d-flex align-items-center justify-content-center about-us">
+            <h1 class="text-white">Sobre o Projeto</h1>
+         </div>
+
+         <div class="bg-light d-flex justify-content-center flex-column align-items-center gap-3">
+            <h1 class="text-schneider-color">Pilares</h1>
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 col-md-4 d-flex justify-content-center mb-3">
+                     <div class="bg-white p-3 shadow shadow-success text-center custom-container" style="width: 15vw; min-width: 180px; height: 8vw; min-height: 100px;">
+                        <span>Entregar um produto de valor aos nossos clientes</span>
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-4 d-flex justify-content-center mb-3">
+                     <div class="bg-white p-3 shadow text-center custom-container" style="width: 15vw; min-width: 180px; height: 8vw; min-height: 100px;">
+                        Compromisso com a excelência e inovação
+                     </div>
+                  </div>
+                  <div class="col-12 col-md-4 d-flex justify-content-center mb-3">
+                     <div class="bg-white p-3 shadow text-center custom-container" style="width: 15vw; min-width: 180px; height: 8vw; min-height: 100px;">
+                        Estudantes apaixonados por tecnologia
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="bg-white w-100 d-flex flex-column justify-content-center align-items-center px-5 py-5 gap-5" style="height: 100vh;">
+            <h1 class="text-schneider-color">O que fizemos</h1>
+            <div class="d-flex justify-content-center">
+               <div class="bg-white p-3" style="width: 71.5%;">
+                  <p class="text-center fw-bolder">
+                     Como estudantes apaixonados por tecnologia, unimos nossas habilidades para desenvolver uma rede social completa para a Schneider Electric. Ao combinar expertise em design, arquitetura de software, experiência do usuário
+                     e desenvolvimento frontend, criamos a plataforma "MySchneider". Nosso compromisso com a excelência e inovação nos motiva a continuar gerando soluções impactantes e com valor aos nossos clientes.
+                  </p>
+               </div>
+            </div>
+
+            <iframe
+               src="https://www.youtube.com/embed/T9B9ysMakFo"
+               title="YouTube video player"
+               style="width: 60vw; min-width: 300px; height: 250vw; min-height: 50px;"
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+               allowfullscreen
+            ></iframe>
+         </div>
+
+         <!-- em dispositivos grandes -->
+         <div class="d-none d-md-flex align-items-center justify-content-center gap-5 px-5">
+            <img src="./img/nosso-time.svg" alt="nosso time" />
+            <div class="d-flex flex-column gap-3">
+               <h1 class="text-schneider-color">Nosso time</h1>
+               <p>Nós somos a equipe mySchneider da FIAP, composta por Leandro Cavallari, João Belluzo, Sofia Sawczenko, Gabriel Tavares e Breno Perrotti.</p>
+            </div>
+         </div>
+
+         <!-- em dispositivos pequenos -->
+         <main class="container d-md-none">
+            <div class="row align-items-center justify-content-center gap-5 px-5">
+               <div class="col-md-6 text-center"> 
+                  <img src="./img/nosso-time.svg" style="width: 1300px;" alt="nosso time" class="img-fluid" />
+               </div>
+               <div class="col-md-6"> 
+                  <div class="d-flex flex-column gap-3">
+                        <h1 class="text-schneider-color">Nosso time</h1>
+                        <p>Nós somos a equipe mySchneider da FIAP, composta por Leandro Cavallari, João Belluzo, Sofia Sawczenko, Gabriel Tavares e Breno Perrotti.</p>
+                  </div>
+               </div>
+            </div>
+         </main>
+
+         <div class="mt-3 text-center">
+            <a href="https://www.se.com/br/pt/about-us/sustainability/foundation/" class="btn shadow" style="background-color: #42b4e6; border-color: #42b4e6; color: #ffffff;">
+                <img src="img/open-new-window.png" alt="Ícone" style="width: 20px; height: 20px; margin-right: 5px;">
+                Conhecer o time
+            </a>
+        </div>
+
+
+      </main> 
+
+      <!------------------------------------------- FOOTER ------------------------------------------>
+      <footer class="bg-white d-flex flex-column align-items-center justify-content-center py-4 mt-5">
+         <img src="img/myschneider-logo-footer.svg" alt="logo mySchneider" />
+
+         <hr class="divider" />
+         <p>© 2023 MySchneider | All Rights Reserved</p>
+      </footer>
+      <script src="js/drawer.js"></script>
+   </body>
 </html>
